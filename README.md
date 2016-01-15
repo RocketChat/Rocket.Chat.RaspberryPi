@@ -49,3 +49,7 @@ The shortest path to get Rocket.Chat running on your Pi:
 ### Where to get Rocket.Chat
 
 https://github.com/rocketchat/Rocket.Chat
+
+### Want ready-to-run server?
+
+Support the project.  Donate $100 or more to the project and we will ship you a ready-to-run server, anywhere in North American, Europe, Japan, or Brazil.

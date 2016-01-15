@@ -13,8 +13,8 @@ You can now run a private chat server on your Pi for:
 Enjoy Rocket.Chat features includiing:
 * Video and audio chat
 * iOS app for iPhones and iPads
-* Android phone and tablet app
-* Desktop clients for Windows, MacOSX, and Linux
+* App for Android phones and tablets 
+* Desktop app for Windows, MacOSX, and Linux
 * Multiple Rooms
 * Direct Messages
 * Private Groups
@@ -39,7 +39,7 @@ The shortest path to get Rocket.Chat running on your Pi:
 
 
 
-### Where to get a Raspberry Pi 2
+### Where to get the Raspberry Pi 2 server
 * [Microcenter](http://www.microcenter.com/product/447313/2_Model_B_Development_Board)
 * [Frys](http://frys.com/product/8402328?site=sr:SEARCH:MAIN_RSLT_PG)
 * [Amazon](http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I)

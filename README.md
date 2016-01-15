@@ -1,6 +1,4 @@
-![Rocket.Chat logo](https://rocket.chat/images/logo/logo-dark.svg?v3)
-
-![](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/raspberry-logo.png)
+![Rocket.Chat on Pi Logo](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/raspberry-logo.png)
 
 * Raspberry Pi 2 is the tiny $30 quad-core computer that revolutionalized affordable servers
 * Rocket.Chat is the popular high performance, large capacity, open source web chat platform that rocked the server world 
@@ -14,7 +12,9 @@ You can now run a private chat server on your Pi for:
 
 ### Background
 
-This project adapts the Rocket.Chat server for running on Raspberry Pi 2 
+This project adapts the Rocket.Chat server to run on a Raspberry Pi 2 
 
-This project is currently work in progress.
+<img src="https://raw.githubusercontent.com/Sing-Li/bbug/master/images/rockpismal.png" width="480">
+
+This project is currently work in progress and undergoing rapid changes.
 

@@ -142,7 +142,7 @@ Come join us at https://demo.rocket.chat/ to get help from our friendly communit
 
 Let's all gather at https://demo.rocket.chat/channel/raspberrypi  - and talk Pi !!
 
-#### Makers Ahoy
+#### Makers Ahoy!
 
 Your imagination is your only limit.
 
@@ -155,6 +155,16 @@ Both Raspberry Pi and Rocket.Chat are open source, 100% programmable, 100% Maker
 Tell us about your innovative project, or find other collaborators at:
 
 https://demo.rocket.chat/channel/raspberrypi
+
+#### Support this project
+
+Help us spread the word about this project!  
+
+Tell all your Pi and Maker friends!  Show off Rocket.Chat at your next meetup!
+
+Tweet about us, or show off Pi with Rocket.Chat on Facebook!
+
+Order a Rocket.Chat sticker for your [Mac](https://www.stickermule.com/marketplace/10009-rocket-dot-chat-logo), [tablet](https://www.stickermule.com/marketplace/9987-rocket-dot-chat), or [Pi case](https://www.stickermule.com/marketplace/9989-rocket-dot-chat)!
 
 ### Where to get the Raspberry Pi 2 server
 * [Microcenter](http://www.microcenter.com/product/447313/2_Model_B_Development_Board)

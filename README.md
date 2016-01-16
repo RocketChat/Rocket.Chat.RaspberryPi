@@ -105,6 +105,13 @@ Point a browser on your PC to your Raspberry Pi:
 
 http://rasp pi host IP:3000/
 
+#### Stuck?  Need help?
+
+Create an issue here:     https://github.com/RocketChat/Rocket.Chat.RaspberryPi/issues/new
+
+OR
+
+Come join us at https://demo.rocket.chat/ to get help from our friendly community and the dev team.
 
 ### Where to get the Raspberry Pi 2 server
 * [Microcenter](http://www.microcenter.com/product/447313/2_Model_B_Development_Board)

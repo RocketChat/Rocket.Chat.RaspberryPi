@@ -30,6 +30,8 @@ This project adapts the Rocket.Chat server to run on a Raspberry Pi 2
 
 <img src="https://raw.githubusercontent.com/Sing-Li/bbug/master/images/rockpismal.png" width="480">
 
+Learn about [Rocket.Chat](https://rocket.chat/).
+
 This project is currently work in progress and is undergoing rapid changes.
 
 ### Running Rocket.Chat on Pi Server Quick Start

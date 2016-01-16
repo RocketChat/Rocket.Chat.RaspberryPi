@@ -169,9 +169,12 @@ Order a Rocket.Chat sticker for your [Mac](https://www.stickermule.com/marketpla
 ### Where to get the Raspberry Pi 2 server
 * [Microcenter](http://www.microcenter.com/product/447313/2_Model_B_Development_Board)
 * [Frys](http://frys.com/product/8402328?site=sr:SEARCH:MAIN_RSLT_PG)
+* [Adafruit](https://www.adafruit.com/product/2358)
+* [Sparkfun](https://www.sparkfun.com/products/13297)
 * [Amazon](http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I)
 * [Element 14](http://www.element14.com/community/community/raspberry-pi/raspberrypi2)
-* [Mercado Livre](http://lista.mercadolivre.com.br/raspberry-pi-2-1gb#D)
+* [Mercado Livre Brazil](http://lista.mercadolivre.com.br/raspberry-pi-2-1gb#D)
+* [RS Japan](http://jp.rs-online.com/web/p/processor-microcontroller-development-kits/832-6274/)
 
 ### Where to get Rocket.Chat
 

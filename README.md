@@ -122,6 +122,12 @@ Come join us at https://demo.rocket.chat/ to get help from our friendly communit
 
 ### Where to get Rocket.Chat
 
+Apps for iPhone, iPad, Android, Windows, MacOSX:
+
+https://Rocket.Chat/
+
+Server source code (open source MIT Licensed):
+
 https://github.com/rocketchat/Rocket.Chat
 
 ### Want ready-to-run servers?

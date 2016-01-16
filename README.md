@@ -135,6 +135,10 @@ OR
 
 Come join us at https://demo.rocket.chat/ to get help from our friendly community and the dev team.
 
+#### Community meetup 24 x 7
+
+Let's all gather at https://demo.rocket.chat/channel/raspberrypi  - and talk Pi !!
+
 ### Where to get the Raspberry Pi 2 server
 * [Microcenter](http://www.microcenter.com/product/447313/2_Model_B_Development_Board)
 * [Frys](http://frys.com/product/8402328?site=sr:SEARCH:MAIN_RSLT_PG)

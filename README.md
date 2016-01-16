@@ -122,10 +122,13 @@ cd ngrok
 ./ngrok http 3000
 ```
 
-Now follow the instruction and give the ngrok URL to your friends and family anywhere in the world.  
+Now follow the instruction and give the ngrok link to your friends and family anywhere in the world.  
 
-They can access your server via the URL.  
+They can access your server via the ngrok link.  
 
+HINT:  if you want to use the voice and video chat features, make sure you give them the link starting with `https://`
+
+Experiment:  Ask them to download the Rocket.Chat app on Android PlayStore or the Apple Appstore for their phone and tablets! 
 
 #### Stuck?  Need help?
 
@@ -138,6 +141,20 @@ Come join us at https://demo.rocket.chat/ to get help from our friendly communit
 #### Community meetup 24 x 7
 
 Let's all gather at https://demo.rocket.chat/channel/raspberrypi  - and talk Pi !!
+
+#### Makers Ahoy
+
+Your imagination is your only limit.
+
+Both Raspberry Pi and Rocket.Chat are open source, 100% programmable, 100% Makers-ready!
+
+* get the Raspberry Pi Camera into a Rocket.Chat room
+* hook up your home control project to Rocket.Chat
+* manage your fleet of drones remotely on the web via RC on Pi
+
+Tell us about your innovative project, or find other collaborators at:
+
+https://demo.rocket.chat/channel/raspberrypi
 
 ### Where to get the Raspberry Pi 2 server
 * [Microcenter](http://www.microcenter.com/product/447313/2_Model_B_Development_Board)

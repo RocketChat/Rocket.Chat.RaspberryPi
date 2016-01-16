@@ -55,8 +55,10 @@ The version of `node` distributed with Raspian is too old.  `npm` is not include
 
 The easiest way to get both is to clone from the Meteor universal project.
 
-`cd $HOME`
-`git clone --depth 1 https://github.com/4commerce-technologies-AG/meteor.git`
+```
+cd $HOME
+git clone --depth 1 https://github.com/4commerce-technologies-AG/meteor.git
+```
 
 then
 
@@ -104,6 +106,24 @@ Wait until the server fully starts. About a minute.
 Point a browser on your PC to your Raspberry Pi:
 
 http://rasp pi host IP:3000/
+
+#### Put your chat server on the Internet for global access
+
+With your Rocket.Chat server up and running.
+
+Download ngrok:
+
+```
+curl  https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip -o ngrok.zip
+unzip ngrok.zip
+cd ngrok
+./ngrok http 3000
+```
+
+Now follow the instruction and give the ngrok URL to your friends and family anywhere in the world.  
+
+They can access your server via the URL.  
+
 
 #### Stuck?  Need help?
 

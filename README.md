@@ -30,7 +30,7 @@ This project adapts the Rocket.Chat server to run on a Raspberry Pi 2
 
 <img src="https://raw.githubusercontent.com/Sing-Li/bbug/master/images/rockpismal.png" width="480">
 
-This project is currently work in progress and undergoing rapid changes.
+This project is currently work in progress and is undergoing rapid changes.
 
 ### Running Rocket.Chat on Pi Server Quick Start
 
@@ -38,20 +38,20 @@ The shortest path to get Rocket.Chat running on your Pi:
 
 #### Get latest Raspian for your Pi
 
-Find download here.  This instruction assume Raspbian Jessie
+Find download here (this instruction assumes Raspbian Jessie):
 
 https://www.raspberrypi.org/downloads/raspbian/
 
-Once you have the shell up (you do not need the GUI):
+Use the shell (you do not need the GUI), get the latest fix and updates:
 
 ```
-sudo apt-get update`
-sudo apt-get upgrade`
+sudo apt-get update
+sudo apt-get upgrade
 ```
 
 ####  Get required node and npm
 
-The version of node distributed with Raspian is too old.  npm is not included.
+The version of `node` distributed with Raspian is too old.  `npm` is not included.
 
 The easiest way to get both is to clone from the Meteor universal project.
 

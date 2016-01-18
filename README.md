@@ -128,7 +128,11 @@ They can access your server via the ngrok link.
 
 HINT:  if you want to use the voice and video chat features, make sure you give them the link starting with `https://`
 
-Experiment:  Ask them to download the Rocket.Chat app on Android PlayStore or the Apple Appstore for their phone and tablets! 
+#### Mobile messaging on phones and tablets
+
+Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or the Apple Appstore for their phone and tablets! 
+
+Add your server's ngrok link to the app, and start mobile messaging one another!
 
 #### Stuck?  Need help?
 

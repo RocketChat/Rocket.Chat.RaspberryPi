@@ -190,6 +190,3 @@ Server source code (open source MIT Licensed):
 
 https://github.com/rocketchat/Rocket.Chat
 
-### Want ready-to-run servers?
-
-Support the project.  Donate $100 or more to the project and we will ship you a ready-to-run server, anywhere in North American, Europe, Japan, or Brazil.

@@ -72,7 +72,7 @@ then
 cd $HOME
 mkdir rocketchat
 cd rocketchat
-curl https://s3.amazonaws.com/rocketchat/build/rocket.chat-pi-develop.tgz -o rocket.chat.tgz
+curl https://cdn-download.rocket.chat/build/rocket.chat-pi-develop.tgz -o rocket.chat.tgz
 tar zxvf rocket.chat.tgz
 ````
 
@@ -98,7 +98,7 @@ need it next.
 cd $HOME/rocketchat/bundle/program/server
 $HOME/meteor/dev_bundle/bin/npm install
 cd $HOME/rocketchat/bundle
-PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongo://user@password:dataurlfrommongolabs    $HOME/rocketchat/dev_bundle/bin/node main.js
+PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongo://user@password:dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js
 ```
 
 Wait until the server fully starts. About a minute.

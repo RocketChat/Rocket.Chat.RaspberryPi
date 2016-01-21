@@ -14,9 +14,12 @@ You can now run a private chat server on your Pi for:
 
 Enjoy Rocket.Chat features includiing:
 * Video and audio chat
+* Share photos and voice messages
+* Share streaming music and video links
 * iOS app for iPhones and iPads
 * App for Android phones and tablets 
 * Desktop app for Windows, MacOSX, and Linux
+* Operate in 22 different languages
 * Multiple Rooms
 * Direct Messages
 * Private Groups

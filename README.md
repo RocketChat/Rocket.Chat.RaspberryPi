@@ -100,7 +100,7 @@ need it next.
 #### Install dependencies and start Rocket.Chat
 
 ```
-cd $HOME/rocketchat/bundle/program/server
+cd $HOME/rocketchat/bundle/programs/server
 $HOME/meteor/dev_bundle/bin/npm install
 cd $HOME/rocketchat/bundle
 PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongo://user@password:dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js

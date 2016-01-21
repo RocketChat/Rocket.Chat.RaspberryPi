@@ -10,6 +10,8 @@ You can now run a private chat server on your Pi for:
 * school
 * office
 
+![Picture of mobile Rocket.Chat in action](https://cloud.githubusercontent.com/assets/11763113/11993320/ccdcf296-aa72-11e5-9950-e08f7a280516.png)
+
 Enjoy Rocket.Chat features includiing:
 * Video and audio chat
 * iOS app for iPhones and iPads

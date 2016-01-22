@@ -103,7 +103,11 @@ need it next.
 cd $HOME/rocketchat/bundle/programs/server
 $HOME/meteor/dev_bundle/bin/npm install
 cd $HOME/rocketchat/bundle
-PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongo://user@password:dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js
+```
+
+The following ALL on one single line, with spaces to separate the environment variables:
+```
+PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://user.password@host:dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js
 ```
 
 Wait until the server fully starts. About a minute.

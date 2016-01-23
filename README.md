@@ -41,6 +41,12 @@ This project is currently work in progress and is undergoing rapid changes.
 
 ### Running Rocket.Chat on Pi Server Quick Start
 
+**VERY IMPORTANT**
+
+Make sure you start with a CLEAN INSTALL of **Raspbian JESSIE  -- NOT Wheezy**
+
+Make sure you are using a **Pi 2** -  **NOT a Pi Model B or Model B+ or Model A** (the older Pi models have completely different instruction set - v6 - and require binaries that we have **NOT tested - likely will not work**)
+
 The shortest path to get Rocket.Chat running on your Pi:
 
 #### Get latest Raspian for your Pi
@@ -48,6 +54,8 @@ The shortest path to get Rocket.Chat running on your Pi:
 Find download here (this instruction assumes Raspbian Jessie):
 
 https://www.raspberrypi.org/downloads/raspbian/
+
+
 
 Use the shell (you do not need the GUI), get the latest fix and updates:
 

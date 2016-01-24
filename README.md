@@ -153,15 +153,17 @@ Add your server's ngrok link to the app, and start mobile messaging one another!
 
 #### Stuck?  Need help?
 
-Create an issue here:     https://github.com/RocketChat/Rocket.Chat.RaspberryPi/issues/new
+First, check our list of [Frequently Asked Questions](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) to see if your question is already included.
+
+If not, create an issue here:     https://github.com/RocketChat/Rocket.Chat.RaspberryPi/issues/new
 
 OR
 
-Come join us at https://demo.rocket.chat/ to get help from our friendly community and the dev team.
+Come join us at https://demo.rocket.chat/ to get help from friendly  RockOnPi community members and Rocket.Chat dev team.
 
-#### Community meetup 24 x 7
+#### RockOnPi Community meetup 24 x 7
 
-Let's all gather at https://demo.rocket.chat/channel/raspberrypi  - and talk Pi !!
+The RockOnPi community gathers at https://demo.rocket.chat/channel/raspberrypi  - and talk Pi !!
 
 #### Makers Ahoy!
 

@@ -154,6 +154,7 @@ Installing Rocket.Chat with supervisor makes shure your chat server starts at sy
   #!/bin/bash
   PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://<user>:<password>@<host>:<port>/dataurlfrommongolabs  /home/pi/meteor/dev_bundle/bin/node main.js
   ```
+  * Change MONGO_URL to match your settings (see above)
   * Save and exit (Crtl-x , y)
 
 * Start supervisor:

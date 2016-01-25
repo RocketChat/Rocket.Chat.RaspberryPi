@@ -128,6 +128,7 @@ Point a browser on your PC to your Raspberry Pi:
 http://rasp pi host IP:3000/
 
 #### Install as supervisor
+Installing Rocket.Chat with supervisor makes shure your chat server starts at system boot and restarts if it crashes. Refer to [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-supervisor-on-ubuntu-and-debian-vps) for more information about Supervisor.  
 * Install supervisor
 `sudo apt-get install supervisor`
 
@@ -144,7 +145,7 @@ http://rasp pi host IP:3000/
   stderr_logfile=/var/log/Rocket.Chat.err.log
   stdout_logfile=/var/log/Rocket.Chat.out.log
   ```
-  * Save and exit (Crtl-x , `y`)
+  * Save and exit (Crtl-x , y)
 
 * Create `start_rcpi.sh`
   * `nano $HOME/rocketchat/bundle/start_rcpi.sh`
@@ -153,7 +154,7 @@ http://rasp pi host IP:3000/
   #!/bin/bash
   PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://<user>:<password>@<host>:<port>/dataurlfrommongolabs  /home/pi/meteor/dev_bundle/bin/node main.js
   ```
-  * Save and exit (Crtl-x , `y`)
+  * Save and exit (Crtl-x , y)
 
 * Start supervisor:
   ```
@@ -161,10 +162,10 @@ http://rasp pi host IP:3000/
   sudo supervisorctl restart
   ```
 * Make sure everything is up and running
-```
-pi@raspberrypi:~/rocketchat/bundle $ sudo supervisorctl
-RocketChat                       RUNNING    pid 26619, uptime 0:07:09
-```
+  ```
+  pi@raspberrypi:~/rocketchat/bundle $ sudo supervisorctl
+  RocketChat                       RUNNING    pid 26619, uptime 0:07:09
+  ```
 
 #### Put your chat server on the Internet for global access
 

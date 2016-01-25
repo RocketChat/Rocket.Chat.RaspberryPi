@@ -45,7 +45,7 @@ This project is currently work in progress and is undergoing rapid changes.
 
 Make sure you start with a CLEAN INSTALL of **Raspbian JESSIE  -- NOT Wheezy**
 
-Make sure you are using a **Pi 2** -  **NOT a Pi Model B or Model B+ or Model A** (the older Pi models have completely different instruction set - v6 - and require binaries that we have **NOT tested - likely will not work**)
+Make sure you are using a **Pi 2** -  **NOT a Pi Model B or Model B+ or Model A** (the older Pi models have completely different instruction set - v6 - and require binaries that **WILL NOT** work with this instruction - see [FAQ](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) if you absolutely must work with older Pi)
 
 The shortest path to get Rocket.Chat running on your Pi:
 

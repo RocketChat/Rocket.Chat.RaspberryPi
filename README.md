@@ -127,8 +127,38 @@ Point a browser on your PC to your Raspberry Pi:
 
 http://rasp pi host IP:3000/
 
-#### Install as supervisor
-Installing Rocket.Chat with supervisor makes shure your chat server starts at system boot and restarts if it crashes. Refer to [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-supervisor-on-ubuntu-and-debian-vps) for more information about Supervisor.  
+
+#### Put your chat server on the Internet for global access
+
+With your Rocket.Chat server up and running, start another shell - typically (Ctrl-Alt-F2) or (Ctl-Alt-F3).
+
+Login, download and start ngrok (see [ngrok.com](https://ngrok.com) if you need more information):
+
+```
+curl  https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip -o ngrok.zip
+unzip ngrok.zip
+cd ngrok
+./ngrok http 3000
+```
+
+Now follow the instruction and give the ngrok link to your friends and family anywhere in the world.  
+
+They can access your server via the ngrok link.  
+
+HINT:  if you want to use the voice and video chat features, make sure you give them the link starting with `https://`
+
+#### Mobile messaging on phones and tablets
+
+Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or the Apple Appstore for their phone and tablets! 
+
+Add your server's ngrok link to the app, and start mobile messaging one another!
+
+
+#### OPTIONAL :  Auto re-start Rocket.Chat if Pi Reboots or Crashes
+
+NOTE:  You do not have to do the following to enjoy your Pi server. It is optional.
+
+Installing Rocket.Chat with supervisor makes sure your chat server starts at system boot and restarts if it crashes. Refer to [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-supervisor-on-ubuntu-and-debian-vps) for more information about Supervisor.  
 * Install supervisor
 `sudo apt-get install supervisor`
 
@@ -170,30 +200,6 @@ Installing Rocket.Chat with supervisor makes shure your chat server starts at sy
   RocketChat                       RUNNING    pid 26619, uptime 0:07:09
   ```
 
-#### Put your chat server on the Internet for global access
-
-With your Rocket.Chat server up and running, start another shell - typically (Ctrl-Alt-F2) or (Ctl-Alt-F3).
-
-Login, download and start ngrok (see [ngrok.com](https://ngrok.com) if you need more information):
-
-```
-curl  https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip -o ngrok.zip
-unzip ngrok.zip
-cd ngrok
-./ngrok http 3000
-```
-
-Now follow the instruction and give the ngrok link to your friends and family anywhere in the world.  
-
-They can access your server via the ngrok link.  
-
-HINT:  if you want to use the voice and video chat features, make sure you give them the link starting with `https://`
-
-#### Mobile messaging on phones and tablets
-
-Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or the Apple Appstore for their phone and tablets! 
-
-Add your server's ngrok link to the app, and start mobile messaging one another!
 
 #### Stuck?  Need help?
 

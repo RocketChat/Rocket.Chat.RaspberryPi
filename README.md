@@ -157,10 +157,12 @@ Installing Rocket.Chat with supervisor makes shure your chat server starts at sy
   * Change MONGO_URL to match your settings (see above)
   * Save and exit (Crtl-x , y)
 
-* Start supervisor:
+* Make `start_rcpi.sh` executable: `sudo chmod +x start_rcpi.sh`  
+
+* Start supervisor:  
   ```
-  sudo supervisorctl reread
-  sudo supervisorctl restart
+  sudo supervisorctl reread  
+  sudo supervisorctl restart  
   ```
 * Make sure everything is up and running
   ```

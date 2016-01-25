@@ -116,7 +116,7 @@ cd $HOME/rocketchat/bundle
 
 The following ALL on one single line, with spaces to separate the environment variables:
 ```
-PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://user.password@host:dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js
+PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://<user>:<password>@<host>:<port>/dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js
 ```
 
 Wait until the server fully starts. About a minute.

@@ -62,6 +62,7 @@ Use the shell (you do not need the GUI), get the latest fix and updates:
 ```
 sudo apt-get update
 sudo apt-get upgrade
+sudo apt-get install git
 ```
 
 ####  Get required node and npm

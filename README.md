@@ -239,6 +239,7 @@ Tweet about us, or show off Pi with Rocket.Chat on Facebook!
 Order a Rocket.Chat sticker for your [Mac](https://www.stickermule.com/marketplace/10009-rocket-dot-chat-logo), [tablet](https://www.stickermule.com/marketplace/9987-rocket-dot-chat), or [Pi case](https://www.stickermule.com/marketplace/9989-rocket-dot-chat)!
 
 ### Where to get the Raspberry Pi 2 server
+* [Off the shelf at any Microsoft store](http://www.microsoftstore.com/store/msusa/en_US/pdp/Raspberry-Pi-2-Model-B-%2B-8GB-microSD-Bundle/productID.328659700)
 * [Microcenter](http://www.microcenter.com/product/447313/2_Model_B_Development_Board)
 * [Frys](http://frys.com/product/8402328?site=sr:SEARCH:MAIN_RSLT_PG)
 * [Adafruit](https://www.adafruit.com/product/2358)

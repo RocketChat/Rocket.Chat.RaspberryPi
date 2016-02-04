@@ -153,51 +153,11 @@ Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or 
 
 Add your server's ngrok link to the app, and start mobile messaging one another!
 
+#### More fun with community contributions
 
-#### OPTIONAL :  Auto re-start Rocket.Chat if Pi Reboots or Crashes
+Try the following optional enchacements for your RocketOnPi, contributed by your friendly fellow community members:
 
-NOTE:  You do not have to do the following to enjoy your Pi server. It is optional.
-
-Installing Rocket.Chat with supervisor makes sure your chat server starts at system boot and restarts if it crashes. Refer to [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-supervisor-on-ubuntu-and-debian-vps) for more information about Supervisor.  
-* Install supervisor
-`sudo apt-get install supervisor`
-
-* Create a new configuration file for supervisor
-``` sh
-cat > /etc/supervisor/conf.d/Rocket.Chat.conf <<EOF
-[program:RocketChat]
-command=/home/pi/rocketchat/bundle/start_rcpi.sh
-directory=/home/pi/rocketchat/bundle
-autostart=true
-autorestart=true
-stderr_logfile=/var/log/Rocket.Chat.err.log
-stdout_logfile=/var/log/Rocket.Chat.out.log
-EOF
-```
-* Create `start_rcpi.sh`
-``` sh
-cat > $HOME/rocketchat/bundle/start_rcpi.sh <<EOF
-#!/bin/sh
-PORT=3000
-ROOT_URL=http://localhost:3000
-MONGO_URL=mongodb://<user>:<password>@<host>:<port>/dataurlfrommongolabs
-/home/pi/meteor/dev_bundle/bin/node main.js
-EOF
-```
-* Change MONGO_URL to match your settings (see above)
-
-* Make `start_rcpi.sh` executable: `sudo chmod +x start_rcpi.sh`  
-
-* Start supervisor:  
-  ```
-  sudo supervisorctl reread  
-  sudo supervisorctl restart  
-  ```
-* Make sure everything is up and running
-  ```
-  pi@raspberrypi:~/rocketchat/bundle $ sudo supervisorctl
-  RocketChat                       RUNNING    pid 26619, uptime 0:07:09
-  ```
+[Auto re-start Rocket.Chat if Pi Reboots or Crashes](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/restart_after_reboot_with_supervisor),  by @elpatron68 and @j8r
 
 
 #### Stuck?  Need help?

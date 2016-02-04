@@ -59,7 +59,7 @@ https://www.raspberrypi.org/downloads/raspbian/
 
 Use the shell (you do not need the GUI), get the latest fix and updates:
 
-```
+``` sh
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git
@@ -71,7 +71,7 @@ The version of `node` distributed with Raspian is too old.  `npm` is not include
 
 The easiest way to get both is to clone from the Meteor universal project.
 
-```
+``` sh
 cd $HOME
 git clone --depth 1 https://github.com/4commerce-technologies-AG/meteor.git
 ```
@@ -82,13 +82,13 @@ then
 
 ####  Download the Rocket.Chat binary for Raspberry Pi
 
-````
+``` sh
 cd $HOME
 mkdir rocketchat
 cd rocketchat
 curl https://cdn-download.rocket.chat/build/rocket.chat-pi-develop.tgz -o rocket.chat.tgz
 tar zxvf rocket.chat.tgz
-````
+```
 
 This will download and untar the app in `$HOME/rocketchat`
 
@@ -108,14 +108,14 @@ need it next.
 
 #### Install dependencies and start Rocket.Chat
 
-```
+``` sh
 cd $HOME/rocketchat/bundle/programs/server
 $HOME/meteor/dev_bundle/bin/npm install
 cd $HOME/rocketchat/bundle
 ```
 
 The following ALL on one single line, with spaces to separate the environment variables:
-```
+``` sh
 PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://<user>:<password>@<host>:<port>/dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js
 ```
 
@@ -134,7 +134,7 @@ With your Rocket.Chat server up and running, start another shell - typically (Ct
 
 Login, download and start ngrok (see [ngrok.com](https://ngrok.com) if you need more information):
 
-```
+``` sh
 curl  https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip -o ngrok.zip
 unzip ngrok.zip
 cd ngrok
@@ -163,7 +163,7 @@ Installing Rocket.Chat with supervisor makes sure your chat server starts at sys
 `sudo apt-get install supervisor`
 
 * Create a new configuration file for supervisor
-```
+``` sh
 cat > /etc/supervisor/conf.d/Rocket.Chat.conf <<EOF
 [program:RocketChat]
 command=/home/pi/rocketchat/bundle/start_rcpi.sh
@@ -175,7 +175,7 @@ stdout_logfile=/var/log/Rocket.Chat.out.log
 EOF
 ```
 * Create `start_rcpi.sh`
-```
+``` sh
 cat > $HOME/rocketchat/bundle/start_rcpi.sh <<EOF
 #!/bin/sh
 PORT=3000

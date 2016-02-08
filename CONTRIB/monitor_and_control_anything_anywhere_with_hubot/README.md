@@ -38,6 +38,6 @@ export ROCKETCHAT_AUTH=password
 #####  Next steps
 It is an open world of possibilities, limited only by your imagination.
 
-For me personally, it is an intermediate step in integrating my on-board Raspberry Pi camera with Rocket.Chat.  I'll be writing up a bot that takes a command similar to `bot snappix`  and shell out to take and post a picture to the channel.    So remote monitoring of a room at home, from my cellphone, on-demand will become a breeze.
+For me personally, it is an intermediate step in integrating my on-board Raspberry Pi camera with Rocket.Chat.  I'll be writing up a bot that takes a command similar to `bot snappix`  and shell out to take and post a picture to the channel.    So remote monitoring of a room at home, anywhere from my mobile phone, will become a breeze.
 
 

@@ -35,7 +35,7 @@ export ROCKETCHAT_AUTH=password
 1.  login to Rocket.Chat (not as bot), and issue the command `bot help` in GENERAL,  the bot should reply with a list of commands that it knows;  congrats, you now have HubotOnPi running!
 
 #####  Bot away!
-1.  the only information you'll need to create your own powerful bot is ALL on [this single page](https://github.com/github/hubot/blob/master/docs/scripting.md) ;  you will not need to know Rocket.Chat programming at all
+1.  the only information you'll need to create your own powerful bot is on [this single page](https://github.com/github/hubot/blob/master/docs/scripting.md) ;  you will not need to know Rocket.Chat programming at all
 2.  any new hubot you write and placed into the `scripts` subdirectory will be automatically activated the next time you start hubot
 
 #####  Next steps

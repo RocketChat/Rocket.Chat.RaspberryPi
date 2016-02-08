@@ -8,7 +8,7 @@ On your Pi server, hubot can easily:
 * send messages to any Rocket.Chat channel - perhaps to report status
 * interface with almost ANYTHING you have connected to your Pi - anything that can be interface via node.js
 
-Please see hubot for background information.
+Please see [hubot](https://hubot.github.com/) for background information.
 
 
 ### STEPS

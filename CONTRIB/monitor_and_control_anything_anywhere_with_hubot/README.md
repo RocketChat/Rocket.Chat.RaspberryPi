@@ -15,13 +15,13 @@ Please see hubot for background information.
 
 ### INSTALL hubot
 
-n. register a new user named bot on your Rocket.Chat, set its password, you can also set its avatar if you like
-n. login as your pi user, use another console session from the running Rocket.Chat;  you have 4 cores on a Pi 2, most hubot scripts use very few CPU cycles
-n. add the binary path `PATH=$PATH:$HOME/meteor/dev_bundle/bin`
-n. install hubot generator via `sudo npm install -g yo generator-hubot`; this will take quite a while on a Pi 2
-n. now generate a new hubot with `yo hubot` - and then answer the questions; this will generate a hubot in the hubot directory
-n. `cd hubot` and take a look at all the scripts in the `scripts` directory; you can add any new hubot scripts here
-n. setup your environment variables, according to hubot-rocketchat requirements, see [hubot-rocketchat]()   -- for example:
+1. register a new user named bot on your Rocket.Chat, set its password, you can also set its avatar if you like
+1. login as your pi user, use another console session from the running Rocket.Chat;  you have 4 cores on a Pi 2, most hubot scripts use very few CPU cycles
+1. add the binary path `PATH=$PATH:$HOME/meteor/dev_bundle/bin`
+1. install hubot generator via `sudo npm install -g yo generator-hubot`; this will take quite a while on a Pi 2
+1. now generate a new hubot with `yo hubot` - and then answer the questions; this will generate a hubot in the hubot directory
+1. `cd hubot` and take a look at all the scripts in the `scripts` directory; you can add any new hubot scripts here
+1. setup your environment variables, according to hubot-rocketchat requirements, see [hubot-rocketchat](https://github.com/RocketChat/hubot-rocketchat)   -- for example:
 ```
 export ROCKETCHAT_ROOM=''
 export LISTEN_ON_ALL_PUBLIC=true

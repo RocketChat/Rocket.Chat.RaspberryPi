@@ -13,7 +13,7 @@ Please see hubot for background information.
 
 ### STEPS
 
-### INSTALL hubot
+##### INSTALL hubot
 
 1. register a new user named bot on your Rocket.Chat, set its password, you can also set its avatar if you like
 1. login as your pi user, use another console session from the running Rocket.Chat;  you have 4 cores on a Pi 2, most hubot scripts use very few CPU cycles
@@ -29,5 +29,15 @@ export ROCKETCHAT_USER=bot
 export ROCKETCHAT_PASSWORD=<your bot user password>
 export ROCKETCHAT_AUTH=password
 ```
-n.  now run your hubot, it will log the bot user into your Rocket.Chat and start it listening to commands:   `bin/hubot -a rocketchat`
-n.  login to Rocket.Chat (not as bot), and issue the command `bot help` in GENERAL,  the bot should reply with a list of commands that it knows;  congrats, you now have HubotOnPi running!
+
+#####  Run hubot
+1.  now run your hubot, it will log the bot user into your Rocket.Chat and start it listening to commands:   `bin/hubot -a rocketchat`
+1.  login to Rocket.Chat (not as bot), and issue the command `bot help` in GENERAL,  the bot should reply with a list of commands that it knows;  congrats, you now have HubotOnPi running!
+
+
+#####  Next steps
+It is an open world of possibilities, limited only by your imagination.
+
+For me personally, it is an intermediate step in integrating my on-board Raspberry Pi camera with Rocket.Chat.  I'll be writing up a bot that takes a command similar to `bot snappix`  and shell out to take and post a picture to the channel.    So remote monitoring of a room at home, from my cellphone, on-demand will become a breeze.
+
+

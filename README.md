@@ -111,16 +111,22 @@ need it next.
 ``` sh
 cd $HOME/rocketchat/bundle/programs/server
 $HOME/meteor/dev_bundle/bin/npm install
+```
+
+At this point, you may encounter a `curl` execption with ca problem.  This is confirmed to be a bug with the latest Debian/Raspbian, and will be fixed in time.  Meanwhile, please see [FAQ question #1](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions)  for a bypass / temporary fix.
+
+Next,
+
+``` sh
 cd $HOME/rocketchat/bundle
 ```
 
-The following ALL on one single line, with spaces to separate the environment variables:
+Type the following ALL on one single line, with spaces to separate the environment variables:
 ``` sh
 PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://<user>:<password>@<host>:<port>/dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js
 ```
 Wait until the server fully starts. About a minute.
 
-At this point, you may encounter a `curl` execption with ca problem.  This is confirmed to be a bug with the latest Debian/Raspbian, and will be fixed in time.  Meanwhile, please see [FAQ question #1](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions)  for a bypass / temporary fix.
 
 #### Access your Rocket.Chat server and create the Administrative user
 

@@ -65,6 +65,10 @@ sudo apt-get upgrade
 sudo apt-get install git
 ```
 
+Next, follow the Rocket.Chat installation instructions at [DPlatform](https://github.com/j8r/DPlatform).   DPlatform will automatically fix a Debian based bug that might prevent a successful install.
+
+If you do not wish to, or unable to use DPlatform, continue:
+
 ####  Get required node and npm
 
 The version of `node` distributed with Raspian is too old.  `npm` is not included.

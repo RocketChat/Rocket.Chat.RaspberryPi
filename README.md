@@ -65,10 +65,6 @@ sudo apt-get upgrade
 sudo apt-get install git
 ```
 
-Next, follow the Rocket.Chat installation instructions at [DPlatform](https://github.com/j8r/DPlatform).   DPlatform will automatically fix a Debian based bug that might prevent a successful install.
-
-If you do not wish to, or unable to use DPlatform, continue:
-
 ####  Get required node and npm
 
 The version of `node` distributed with Raspian is too old.  `npm` is not included.
@@ -122,8 +118,9 @@ The following ALL on one single line, with spaces to separate the environment va
 ``` sh
 PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://<user>:<password>@<host>:<port>/dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js
 ```
-
 Wait until the server fully starts. About a minute.
+
+At this point, you may encounter a `curl` execption with ca problem.  This is confirmed to be a bug with the latest Debian/Raspbian, and will be fixed in time.  Meanwhile, please see [FAQ question #1](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions)  for a bypass / temporary fix.
 
 #### Access your Rocket.Chat server and create the Administrative user
 

@@ -128,9 +128,9 @@ then
   git clone --depth 1 https://github.com/4commerce-technologies-AG/meteor
 
   # Fix curl CA error
-  echo insecure >> ~/.curlrc
+  echo insecure > ~/.curlrc
   ~/meteor/meteor -v
-  echo secure >> ~/.curlrc
+  rm ~/.curlrc
 
   # Download the Rocket.Chat binary for Raspberry Pi
   curl https://cdn-download.rocket.chat/build/rocket.chat-pi-develop.tgz -o rocket.chat.tgz

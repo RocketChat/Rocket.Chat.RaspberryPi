@@ -80,6 +80,11 @@ then
 
 `$HOME/meteor/meteor -v`
 
+
+At this point, you may encounter a `curl` execption with ca problem.  This is confirmed to be a bug with the latest Debian/Raspbian, and will be fixed in time.  Meanwhile, please see [FAQ question #1](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions)  for a bypass / temporary fix.
+
+Retry the above command after the curl fix.
+
 ####  Download the Rocket.Chat binary for Raspberry Pi
 
 ``` sh
@@ -112,8 +117,6 @@ need it next.
 cd $HOME/rocketchat/bundle/programs/server
 $HOME/meteor/dev_bundle/bin/npm install
 ```
-
-At this point, you may encounter a `curl` execption with ca problem.  This is confirmed to be a bug with the latest Debian/Raspbian, and will be fixed in time.  Meanwhile, please see [FAQ question #1](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions)  for a bypass / temporary fix.
 
 Next,
 

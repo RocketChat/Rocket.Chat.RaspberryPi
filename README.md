@@ -23,6 +23,7 @@ Enjoy Rocket.Chat features including:
 * Multiple Rooms
 * Direct Messages
 * Private Groups
+* Off the record encrypted messages
 * Avatars
 * Emojis
 * Media Embeds
@@ -45,7 +46,17 @@ This project is currently work in progress and is undergoing rapid changes.
 
 Make sure you start with a CLEAN INSTALL of **Raspbian JESSIE  -- NOT Wheezy**
 
-Make sure you are using a **Pi 3 (or Pi 2)** -  **NOT a Pi Zero or Pi Model B or Model B+ or Model A** (these Pi models have  different CPU, memory configurations and instruction sets  that may not work with this instruction, or require some additional work - see [FAQ](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) to work with these Pi)   However, community members have successfully run Rocket.Chat on ALL MODELS of Pi ever manufactured - so come over to our [community hangout](https://demo.rocket.chat/channel/raspberrypi) if you get stuck  :)
+Make sure you are using a **Pi 3 (or Pi 2)** with these instructions.   
+
+Pi Zero,  Pi Model B, Pi Model B+,  or even Pi Model A can all run Rocket.Chat;  but have  different CPU, memory configurations and instruction sets  that may  require some additional work - see [FAQ](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) to work with these Pi s.
+
+Our community members are running Rocket.Chat on EVERY MODEL of Pi ever manufactured - so come over to our [friendly community hangout](https://demo.rocket.chat/channel/raspberrypi) if you get stuck.
+
+And YES, Rocket.Chat even runs on the $5 Pi Zero!  Making it _the first-ever $5 private social network that EVERYONE can afford_ !
+
+![A $5 private social network that EVERYONE can afford ](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/pizero.png)
+
+
 
 The shortest path to get Rocket.Chat running on your Pi is to watch this excellent YouTube tutorial by RockOnPi community member @rdagger - just click on picture to watch:
 
@@ -214,9 +225,9 @@ Tweet about us, or show off Pi with Rocket.Chat on Facebook!
 
 Order a Rocket.Chat sticker for your [Mac](https://www.stickermule.com/marketplace/10009-rocket-dot-chat-logo), [tablet](https://www.stickermule.com/marketplace/9987-rocket-dot-chat), or [Pi case](https://www.stickermule.com/marketplace/9989-rocket-dot-chat)!
 
-### Where to get the Raspberry Pi 2 server
+### Where to get the Raspberry Pi server
 * [Off the shelf at any Microsoft store](http://www.microsoftstore.com/store/msusa/en_US/pdp/Raspberry-Pi-2-Model-B-%2B-8GB-microSD-Bundle/productID.328659700)
-* [Microcenter](http://www.microcenter.com/product/447313/2_Model_B_Development_Board)
+* [Microcenter](http://www.microcenter.com/product/460968/Raspberry_Pi_3_Model_B)
 * [Frys](http://frys.com/product/8402328?site=sr:SEARCH:MAIN_RSLT_PG)
 * [Adafruit](https://www.adafruit.com/product/2358)
 * [Sparkfun](https://www.sparkfun.com/products/13297)

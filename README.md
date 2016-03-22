@@ -1,6 +1,6 @@
 [![Rocket.Chat on Pi Logo](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/raspberry-logo.png)](https://www.raspberrypi.org/)
 
-* Raspberry Pi 2 is the tiny $30 quad-core computer that revolutionalized affordable servers
+* Raspberry Pi is the tiny $30 quad-core computer that revolutionalized affordable servers
 * Rocket.Chat is the popular high performance, large capacity, open source web chat platform that rocked the server world 
 
 You can now run a private chat server on your Pi for:
@@ -45,7 +45,7 @@ This project is currently work in progress and is undergoing rapid changes.
 
 Make sure you start with a CLEAN INSTALL of **Raspbian JESSIE  -- NOT Wheezy**
 
-Make sure you are using a **Pi 2** -  **NOT a Pi Model B or Model B+ or Model A** (the older Pi models have completely different instruction set - v6 - and require binaries that **WILL NOT** work with this instruction - see [FAQ](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) if you absolutely must work with older Pi)
+Make sure you are using a **Pi 3 (or Pi 2)** -  **NOT a Pi Zero or Pi Model B or Model B+ or Model A** (these Pi models have  different CPU, memory configurations and instruction sets  that may not work with this instruction, or require some additional work - see [FAQ](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) to work with these Pi)   However, community members have successfully run Rocket.Chat on ALL MODELS of Pi ever manufactured - so come over to our [community hangout](https://demo.rocket.chat/channel/raspberrypi) if you get stuck  :)
 
 The shortest path to get Rocket.Chat running on your Pi is to watch this excellent YouTube tutorial by RockOnPi community member @rdagger - just click on picture to watch:
 
@@ -58,7 +58,6 @@ If you prefer step-by-step written instructions:
 Find download here (this instruction assumes Raspbian Jessie):
 
 https://www.raspberrypi.org/downloads/raspbian/
-
 
 
 Use the shell (you do not need the GUI), get the latest fix and updates:

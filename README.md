@@ -56,11 +56,15 @@ And YES, Rocket.Chat even runs on the $5 Pi Zero!  Making it _the first-ever $5 
 
 ![A $5 private social network that EVERYONE can afford ](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/pizero.png)
 
-
-
 The shortest path to get Rocket.Chat running on your Pi is to watch this excellent YouTube tutorial by RockOnPi community member @rdagger - just click on picture to watch:
 
 [![From your phone, controll anything connected to your Pi](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/pictrl.png)](https://youtu.be/BevcvRLsa9Y)
+
+#### Installation via DPlatform
+
+Easiest way to install a ready-to-run Rocket.Chat server on a Linux machine, VM, or VPS - [@j8r's   DPlatform](https://github.com/j8r/DPlatform), now in Alpha! 
+
+[![deploy](https://raw.githubusercontent.com/j8r/DPlatform/gh-pages/img/deploy.png)](https://j8r.github.io/DPlatform/)
 
 If you prefer step-by-step written instructions:
 

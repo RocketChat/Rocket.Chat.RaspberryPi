@@ -27,7 +27,8 @@ modprobe w1-gpio
 
 
 ```php
-//Bot settings
+//Settings
+define('ROCKETCHAT_URL','https://rocket.chat');
 define('BOT_USERNAME','bot');
 define('BOT_PASSWORD','secretbotpassword');
 define('BOT_CHANNEL','GENERAL');
@@ -66,17 +67,15 @@ while(1)
 
 function sendRocket($message)
 {
-    $login = makeRequest('https://rocket.haschek.at/api/login',array('password' => BOT_USERNAME, 'user' => BOT_USERNAME));
+    $login = makeRequest(ROCKETCHAT_URL.'/api/login',array('password' => BOT_USERNAME, 'user' => BOT_USERNAME));
     $token = $login['data']['authToken'];
     $user = $login['data']['userId'];
-
-    //$rooms = makeRequest('https://rocket.haschek.at/api/publicRooms',array(),array('X-Auth-Token: '.$token,'X-User-Id: '.$user),false);
-
+    
     //join room
-    makeRequest('https://rocket.haschek.at/api/rooms/'.BOT_CHANNEL.'/join',array(),array('X-Auth-Token: '.$token,'X-User-Id: '.$user));
+    makeRequest(ROCKETCHAT_URL.'/api/rooms/'.BOT_CHANNEL.'/join',array(),array('X-Auth-Token: '.$token,'X-User-Id: '.$user));
 
     //send message
-    makeRequest('https://rocket.haschek.at/api/rooms/'.BOT_CHANNEL.'/send',array('msg'=>$message),array('X-Auth-Token: '.$token,'X-User-Id: '.$user));
+    makeRequest(ROCKETCHAT_URL.'/api/rooms/'.BOT_CHANNEL.'/send',array('msg'=>$message),array('X-Auth-Token: '.$token,'X-User-Id: '.$user));
 }
 
 function makeRequest($url,$data,$headers=false,$post=true)

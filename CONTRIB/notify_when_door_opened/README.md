@@ -1,4 +1,7 @@
 # Doorman script will send a chat message to a rocket chat channel when a door was opened
+by [Christian Haschek](https://blog.haschek.at)
+
+![The result](https://www.pictshare.net/d231fae564.jpg)
 
 ### Requirements
 
@@ -104,3 +107,7 @@ function makeRequest($url,$data,$headers=false,$post=true)
 insert this at the end of the file
 
 ```@reboot php /path/to/your/doorbot.php >> /var/log/doorbot.log```
+
+
+## Should be working now
+![Bot in action](https://www.pictshare.net/d231fae564.jpg)

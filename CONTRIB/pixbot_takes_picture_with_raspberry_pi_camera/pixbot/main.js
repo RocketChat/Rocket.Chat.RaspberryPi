@@ -14,7 +14,7 @@ var timeBetweenPics = 30000;
 
 var picfilename = '';
 
-var baseURL = 'https://rocketchat.pagekite.me/pix/';
+var baseURL = 'https://<<your domain or IP>>/pix/';
 var fileEXT = '.jpg'; 
 var basePATH = '/home/pi/public_html/';
 var takingpix = false;

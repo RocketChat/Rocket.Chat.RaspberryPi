@@ -91,7 +91,7 @@ The easiest way to get both is to clone from the Meteor universal project.
 
 ``` sh
 cd $HOME
-git clone --depth 1 https://github.com/4commerce-technologies-AG/meteor.git
+git clone --depth 1 -b release-1.2.1-universal  https://github.com/4commerce-technologies-AG/meteor.git
 ```
 
 then

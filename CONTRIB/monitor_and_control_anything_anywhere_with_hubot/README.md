@@ -16,6 +16,7 @@ Please see [hubot](https://hubot.github.com/) for background information.
 ##### INSTALL hubot
 
 1. register a new user named bot on your Rocket.Chat, set its password, you can also set its avatar if you like
+1. on the server, as an administator, add the `bot` role (and associated set of permissions) to the new bot user
 1. login as your pi user, use another console session from the running Rocket.Chat;  you have 4 cores on a Pi 2, most hubot scripts use very few CPU cycles
 1. add the binary path `PATH=$PATH:$HOME/meteor/dev_bundle/bin`
 1. install hubot generator via `sudo npm install -g yo generator-hubot`; this will take quite a while on a Pi 2

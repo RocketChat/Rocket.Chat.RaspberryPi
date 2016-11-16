@@ -124,6 +124,8 @@ tar zxvf rocket.chat.tgz
 
 This will download and untar the app in `$HOME/rocketchat`
 
+Alternatively, you can find the latest release [here](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/releases), and just download it.
+
 #### Get a compatible MongoDB instance
 
 Current available mongodb versions on Raspbian are too old for Rocket.Chat. Hopefully the

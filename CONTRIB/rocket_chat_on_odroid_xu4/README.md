@@ -1,4 +1,4 @@
-#  Rocket.Chat on Odroid XU4
+#  Rocket.Chat for 1,000s on an Odroid XU4
 
 [![Odroid XU4 has Octacore with 2 GB RAM](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/odroid3.jpg)](http://www.hardkernel.com/main/products/prdt_info.php?g_code=G143452239825)
 

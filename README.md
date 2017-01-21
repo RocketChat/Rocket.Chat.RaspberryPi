@@ -192,6 +192,10 @@ Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or 
 
 Add your server's ngrok link to the app, and start mobile messaging one another!
 
+#### Large capacity server
+
+Do you need to serve hundreds or even thousands of registered users?   If so, see how you can setup an inexpensive [high capacity Rocket.Chat server on Odroid XU4](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/README.md). 
+
 #### More fun with community contributions
 
 Try the following optional enchacements for your RocketOnPi, contributed by your friendly fellow community members:

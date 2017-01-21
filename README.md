@@ -40,11 +40,11 @@ Learn about [Rocket.Chat](https://rocket.chat/).
 
 This project is currently work in progress and is undergoing rapid changes.
 
-### Running Rocket.Chat on Pi Server via Ubuntu 16.04LTS Snappy Core
+### Running Rocket.Chat on Pi Server with Ubuntu Core 16
 
-You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 2 or Pi 3 in a couple of minutes via Ubuntu 16.04LTS Snappy Core!
+You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 2 or Pi 3 in a couple of minutes with Ubuntu Core 16!
 
-* Follow these instructions to download and install the [Ubuntu Snappy Core SD card image for your Raspberry Pi 2 or Pi 3](https://developer.ubuntu.com/en/snappy/start/raspberry-pi-2)
+* Follow these instructions to download and install the [Ubuntu Core 16 SD card image for your Raspberry Pi 2 or Pi 3](https://developer.ubuntu.com/en/snappy/start/raspberry-pi-2)
 * Perform `sudo snap install rocketchat-server`.  This will take a couple of mintues.   Wait about 2 minutes after everything has completed.  
 * Then, access `http://<server ip>:3000` to access your Rocket.Chat server!   Create the first user, which will become the server's adminsitrator.  Have fun!
 

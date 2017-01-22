@@ -13,11 +13,26 @@
 
 ###  Custom kernel configuration
 
-Manually upgrade the kernel to 4.2 to support AppArmor is required before snap install will work. 
+Manually upgrading the kernel to 4.2 to support AppArmor is required before snap install will work. 
 
-Hardkernel is scheduled to update kernel to 4.2 in February of 2017, and this should no longer be necessary at that time.
+The instructions for upgrading the kernel are found on [Odroid's wiki](http://odroid.com/dokuwiki/doku.php?id=en:xu4_building_kernel).
 
-See [custom kernel configuration](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/odroidxu4-kernel4.2-config)
+This [custom kernel configuration](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/odroidxu4-kernel4.2-config) adds support for various Cloudshell necessities.
+
+Make sure that in your *boot.ini* you reference the new dtb file instead of the old one:
+```
+fatload mmc 0:1 0x44000000 exynos5422-odroidxu4.dtb
+```
+You will also need to enable *AppArmor* in the boot line on *boot.ini*, example:
+```
+setenv bootrootfs "console=tty1 console=ttySAC2,115200n8 apparmor=1 security=apparmor root=UUID=1b7c64c5-e2c1-4e51-a010-ed4a62ce75dd rootwait ro fsck.repair=yes net.ifnames=0"
+```
+If your Cloudshell LCD doesn't turn on, change the module definition on `/etc/modprobe.d/odroid-cloudshell.conf` to:
+```
+options fbtft_device name=hktft9340 busnum=1 rotate=270 gpios=reset:21,dc:22,led:18
+```
+
+Hardkernel is scheduled to officially update the kernel to 4.9 in February of 2017 so these changes should no longer be necessary by then.
 
 
 ###  Tiny Rocket.Chat server for thousands of users

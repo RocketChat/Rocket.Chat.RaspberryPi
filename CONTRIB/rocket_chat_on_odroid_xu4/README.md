@@ -27,7 +27,7 @@ You will also need to enable *AppArmor* in the boot line on *boot.ini*, example:
 ```
 setenv bootrootfs "console=tty1 console=ttySAC2,115200n8 apparmor=1 security=apparmor root=UUID=1b7c64c5-e2c1-4e51-a010-ed4a62ce75dd rootwait ro fsck.repair=yes net.ifnames=0"
 ```
-If your Cloudshell LCD doesn't turn on, change module definition on `/etc/modprobe.d/odroid-cloudshell.conf` to:
+If your Cloudshell LCD doesn't turn on, change the module definition on `/etc/modprobe.d/odroid-cloudshell.conf` to:
 ```
 options fbtft_device name=hktft9340 busnum=1 rotate=270 gpios=reset:21,dc:22,led:18
 ```

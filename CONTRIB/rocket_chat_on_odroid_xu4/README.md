@@ -34,6 +34,22 @@ options fbtft_device name=hktft9340 busnum=1 rotate=270 gpios=reset:21,dc:22,led
 
 Hardkernel is scheduled to officially update the kernel to 4.9 in February of 2017 so these changes should no longer be necessary by then.
 
+### Installing early availability Rocket.Chat armhf snap
+
+Assuming you have Ubuntu 16.04 LTS and above kernel working.
+
+Download the latest work-in-progress ARMHF Rocket.Chat snap from the ubuntu launchpad site:
+
+https://launchpad.net/~sing-li/+snap/rocketchat-server/+build/16320/+files/rocketchat-server_0.48.2_armhf.snap
+
+`scp` the snap onto your XU4 server.
+
+Then use standard snap command to install Rocket.Chat:
+
+```
+sudo snap install ./rocketchat-server_0.48.2_armhf.snap --dangerous
+```
+Wait about a minute, and then check port 3000 for your working Rocket.Chat server!  
 
 ###  Tiny Rocket.Chat server for thousands of users
 

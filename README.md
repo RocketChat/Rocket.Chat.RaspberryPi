@@ -46,6 +46,26 @@ You can get a Rocket.Chat server and a mongoDB instance working on your Raspiber
 * Perform `sudo snap install rocketchat-server`.  This will take a couple of mintues.   Wait about 2 minutes after everything has completed.  
 * Then, access `http://<server ip>:3000` to access your Rocket.Chat server!   Create the first user, which will become the server's adminsitrator.  Have fun!
 
+#### Put your chat server on the Internet for global access
+
+With your Rocket.Chat server up and running, start another shell - typically (Ctrl-Alt-F2) or (Ctl-Alt-F3).
+
+Login, download and start ngrok (see ngrok.com if you need more information):
+
+curl  https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip -o ngrok.zip
+unzip ngrok.zip
+cd ngrok
+./ngrok http 3000
+Now follow the instruction and give the ngrok link to your friends and family anywhere in the world.
+
+They can access your server via the ngrok link.
+
+#### Enable https://  support for your domain name
+
+If you have a registered domain name and a static IP address for your Pi, you can expose your server on the Internet with automatic SSL support.   See this for instructions on caddy (reverse proxy that is included in the installation snap)  configuration:  https://rocket.chat/docs/installation/manual-installation/ubuntu/snaps/autossl
+
+HINT: if you want to use the voice and video chat features, make sure you give them the link starting with https://
+
 Make sure you are using a **Pi 3 (or Pi 2)** with these instructions.   
 
 Pi Zero,  Pi Model B, Pi Model B+,  or even Pi Model A can all run Rocket.Chat;  but have  different CPU, memory configurations and instruction sets  that may  require some additional work - see [FAQ](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) to work with these Pi s.

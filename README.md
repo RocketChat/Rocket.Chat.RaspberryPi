@@ -32,28 +32,19 @@ Enjoy Rocket.Chat features including:
 
 ### Background
 
-This project adapts the Rocket.Chat server to run on a Raspberry Pi 2 
+This project adapts the Rocket.Chat server to run on a Raspberry Pi 3
 
 <img src="https://raw.githubusercontent.com/Sing-Li/bbug/master/images/rockpismal.png" width="480">
 
 Learn about [Rocket.Chat](https://rocket.chat/).
 
-This project is currently work in progress and is undergoing rapid changes.
-
-### Running Rocket.Chat on Pi Server with Ubuntu Core 16
+### Installation 
 
 You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 2 or Pi 3 in a couple of minutes with Ubuntu Core 16!
 
 * Follow these instructions to download and install the [Ubuntu Core 16 SD card image for your Raspberry Pi 2 or Pi 3](https://developer.ubuntu.com/en/snappy/start/raspberry-pi-2)
 * Perform `sudo snap install rocketchat-server`.  This will take a couple of mintues.   Wait about 2 minutes after everything has completed.  
 * Then, access `http://<server ip>:3000` to access your Rocket.Chat server!   Create the first user, which will become the server's adminsitrator.  Have fun!
-
-
-### Running Rocket.Chat on Pi Server Quick Start on Raspbian
-
-**VERY IMPORTANT**
-
-Make sure you start with a CLEAN INSTALL of **Raspbian JESSIE  -- NOT Wheezy**
 
 Make sure you are using a **Pi 3 (or Pi 2)** with these instructions.   
 
@@ -65,19 +56,12 @@ And YES, Rocket.Chat even runs on the $5 Pi Zero!  Making it _the first-ever $5 
 
 ![A $5 private social network that EVERYONE can afford ](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/pizero.png)
 
-The shortest path to get Rocket.Chat running on your Pi is to watch this excellent YouTube tutorial by RockOnPi community member @rdagger - just click on picture to watch:
 
-[![From your phone, controll anything connected to your Pi](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/pictrl.png)](https://youtu.be/BevcvRLsa9Y)
+#### Old way of manual installation:  On Raspbian only
 
-#### Installation via DPlatform
+Make sure you start with a CLEAN INSTALL of **Raspbian JESSIE  -- NOT Wheezy**
 
-Easiest way to install a ready-to-run Rocket.Chat server on a Linux machine, VM, or VPS - [@j8r's   DPlatform](https://github.com/j8r/DPlatform), now in Alpha! 
-
-[![deploy](https://raw.githubusercontent.com/j8r/DPlatform/gh-pages/img/deploy.png)](https://j8r.github.io/DPlatform/)
-
-If you prefer step-by-step written instructions:
-
-#### Get latest Raspian for your Pi
+##### Get latest Raspian for your Pi
 
 Find download here (this instruction assumes Raspbian Jessie):
 
@@ -92,7 +76,7 @@ sudo apt-get upgrade
 sudo apt-get install git
 ```
 
-####  Get required node and npm
+#####  Get required node and npm
 
 The version of `node` distributed with Raspian is too old.  `npm` is not included.
 
@@ -112,7 +96,7 @@ At this point, you may encounter a `curl` execption with ca problem.  This is co
 
 Retry the above command after the curl fix.
 
-####  Download the Rocket.Chat binary for Raspberry Pi
+#####  Download the Rocket.Chat binary for Raspberry Pi
 
 ``` sh
 cd $HOME
@@ -126,7 +110,7 @@ This will download and untar the app in `$HOME/rocketchat`
 
 Alternatively, you can find the latest release [here](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/releases), and just download it.
 
-#### Get a compatible MongoDB instance
+##### Get a compatible MongoDB instance
 
 Current available mongodb versions on Raspbian are too old for Rocket.Chat. Hopefully the
 situation will change shortly.
@@ -140,7 +124,7 @@ https://mongolab.com/
 Create a user and give it write access to the database.  Note the Mongo URL, you will
 need it next.
 
-#### Install dependencies and start Rocket.Chat
+##### Install dependencies and start Rocket.Chat
 
 ``` sh
 cd $HOME/rocketchat/bundle/programs/server
@@ -160,14 +144,14 @@ PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://<user>:<password
 Wait until the server fully starts. About a minute.
 
 
-#### Access your Rocket.Chat server and create the Administrative user
+##### Access your Rocket.Chat server and create the Administrative user
 
 Point a browser on your PC to your Raspberry Pi:
 
 http://rasp pi host IP:3000/
 
 
-#### Put your chat server on the Internet for global access
+##### Put your chat server on the Internet for global access
 
 With your Rocket.Chat server up and running, start another shell - typically (Ctrl-Alt-F2) or (Ctl-Alt-F3).
 
@@ -186,17 +170,22 @@ They can access your server via the ngrok link.
 
 HINT:  if you want to use the voice and video chat features, make sure you give them the link starting with `https://`
 
-#### Mobile messaging on phones and tablets
+##### Mobile messaging on phones and tablets
 
 Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or the Apple Appstore for their phone and tablets! 
 
 Add your server's ngrok link to the app, and start mobile messaging one another!
 
-#### Large capacity server
+##### Large capacity server
 
 Do you need to serve hundreds or even thousands of registered users?   If so, see how you can setup an inexpensive [high capacity Rocket.Chat server on Odroid XU4](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/README.md). 
 
 #### More fun with community contributions
+
+RockOnPi community member @rdagger has contributed this excellent YouTube video on manual installation - just click on picture to watch:
+
+[![From your phone, controll anything connected to your Pi](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/pictrl.png)](https://youtu.be/BevcvRLsa9Y)
+
 
 Try the following optional enchacements for your RocketOnPi, contributed by your friendly fellow community members:
 

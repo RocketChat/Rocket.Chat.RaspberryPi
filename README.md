@@ -176,11 +176,11 @@ Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or 
 
 Add your server's ngrok link to the app, and start mobile messaging one another!
 
-##### Large capacity server
+### Large capacity server
 
 Do you need to serve hundreds or even thousands of registered users?   If so, see how you can setup an inexpensive [high capacity Rocket.Chat server on Odroid XU4](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/README.md). 
 
-#### More fun with community contributions
+### More fun with community contributions
 
 RockOnPi community member @rdagger has contributed this excellent YouTube video on manual installation - just click on picture to watch:
 
@@ -195,7 +195,7 @@ Try the following optional enchacements for your RocketOnPi, contributed by your
 
 [Monitor or control anything connected to your Pi, from anywhere - hubot style!](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/monitor_and_control_anything_anywhere_with_hubot),  by @sing-li
 
-#### Stuck?  Need help?
+### Stuck?  Need help?
 
 First, check our list of [Frequently Asked Questions](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) to see if your question is already included.
 
@@ -205,11 +205,11 @@ OR
 
 Come join us at https://demo.rocket.chat/ to get help from friendly  RockOnPi community members and Rocket.Chat dev team.
 
-#### RockOnPi Community meetup 24 x 7
+### RockOnPi Community meetup 24 x 7
 
 The RockOnPi community gathers at https://demo.rocket.chat/channel/raspberrypi  - and talk Pi !!
 
-#### Makers Ahoy!
+### Makers Ahoy!
 
 Your imagination is your only limit.
 
@@ -223,7 +223,7 @@ Tell us about your innovative project, or find other collaborators at:
 
 https://demo.rocket.chat/channel/raspberrypi
 
-#### Support this project
+### Support this project
 
 Help us spread the word about this project!  
 

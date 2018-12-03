@@ -98,120 +98,11 @@ Make sure you are using a **Pi 3 (or Pi 2)** with these instructions.
 
 Pi Zero,  Pi Model B, Pi Model B+,  or even Pi Model A can all run Rocket.Chat;  but have  different CPU, memory configurations and instruction sets  that may  require some additional work - see [FAQ](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) to work with these Pi s.
 
-Our community members are running Rocket.Chat on EVERY MODEL of Pi ever manufactured - so come over to our [friendly community hangout](https://demo.rocket.chat/channel/raspberrypi) if you get stuck.
+Our community members are running Rocket.Chat on EVERY MODEL of Pi ever manufactured - so come over to our [friendly community hangout](https://open.rocket.chat/channel/raspberrypi) if you get stuck.
 
 And YES, Rocket.Chat even runs on the $5 Pi Zero!  Making it _the first-ever $5 private social network that EVERYONE can afford_ !
 
 ![A $5 private social network that EVERYONE can afford ](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/pizero.png)
-
-<details>
-  <summary>Old way of manual installation:  On Raspbian only</summary>
-
-Make sure you start with a CLEAN INSTALL of **Raspbian JESSIE  -- NOT Wheezy**
-
-##### Get latest Raspian for your Pi
-
-Find download here (this instruction assumes Raspbian Jessie):
-
-https://www.raspberrypi.org/downloads/raspbian/
-
-
-Use the shell (you do not need the GUI), get the latest fix and updates:
-
-``` sh
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install git
-```
-
-#####  Get required node and npm
-
-The version of `node` distributed with Raspian is too old.  `npm` is not included.
-
-The easiest way to get both is to clone from the Meteor universal project.
-
-``` sh
-cd $HOME
-git clone --depth 1 -b release-1.2.1-universal  https://github.com/4commerce-technologies-AG/meteor.git
-```
-
-then
-
-`$HOME/meteor/meteor -v`
-
-
-At this point, you may encounter a `curl` execption with ca problem.  This is confirmed to be a bug with the latest Debian/Raspbian, and will be fixed in time.  Meanwhile, please see [FAQ question #1](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions)  for a bypass / temporary fix.
-
-Retry the above command after the curl fix.
-
-#####  Download the Rocket.Chat binary for Raspberry Pi
-
-``` sh
-cd $HOME
-mkdir rocketchat
-cd rocketchat
-curl https://cdn-download.rocket.chat/build/rocket.chat-pi-develop.tgz -o rocket.chat.tgz
-tar zxvf rocket.chat.tgz
-```
-
-This will download and untar the app in `$HOME/rocketchat`
-
-Alternatively, you can find the latest release [here](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/releases), and just download it.
-
-##### Get a compatible MongoDB instance
-
-Current available mongodb versions on Raspbian are too old for Rocket.Chat. Hopefully the
-situation will change shortly.
-
-Meanwhile, you can use a MongoDB service provider on the Internet.
-Create a user and give it write access to the database.  Note the Mongo URL, you will
-need it next.
-
-##### Install dependencies and start Rocket.Chat
-
-``` sh
-cd $HOME/rocketchat/bundle/programs/server
-$HOME/meteor/dev_bundle/bin/npm install
-```
-
-Next,
-
-``` sh
-cd $HOME/rocketchat/bundle
-```
-
-Type the following ALL on one single line, with spaces to separate the environment variables:
-``` sh
-PORT=3000  ROOT_URL=http://localhost:3000   MONGO_URL=mongodb://<user>:<password>@<host>:<port>/dataurlfrommongolabs    $HOME/meteor/dev_bundle/bin/node main.js
-```
-Wait until the server fully starts. About a minute.
-
-
-##### Access your Rocket.Chat server and create the Administrative user
-
-Point a browser on your PC to your Raspberry Pi:
-
-http://rasp pi host IP:3000/
-
-
-##### Put your chat server on the Internet for global access
-
-With your Rocket.Chat server up and running, start another shell - typically (Ctrl-Alt-F2) or (Ctl-Alt-F3).
-
-Login, download and start ngrok (see [ngrok.com](https://ngrok.com) if you need more information):
-
-``` sh
-curl  https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip -o ngrok.zip
-unzip ngrok.zip
-cd ngrok
-./ngrok http 3000
-```
-
-Now follow the instruction and give the ngrok link to your friends and family anywhere in the world.  
-
-They can access your server via the ngrok link.  
-
-HINT:  if you want to use the voice and video chat features, make sure you give them the link starting with `https://`
 
 ##### Mobile messaging on phones and tablets
 
@@ -247,11 +138,11 @@ If not, create an issue here:     https://github.com/RocketChat/Rocket.Chat.Rasp
 
 OR
 
-Come join us at https://demo.rocket.chat/ to get help from friendly  RockOnPi community members and Rocket.Chat dev team.
+Come join us at https://open.rocket.chat/ to get help from friendly  RockOnPi community members and Rocket.Chat dev team.
 
 ### RockOnPi Community meetup 24 x 7
 
-The RockOnPi community gathers at https://demo.rocket.chat/channel/raspberrypi  - and talk Pi !!
+The RockOnPi community gathers at https://open.rocket.chat/channel/raspberrypi  - and talk Pi !!
 
 ### Makers Ahoy!
 
@@ -265,7 +156,7 @@ Both Raspberry Pi and Rocket.Chat are open source, 100% programmable, 100% Maker
 
 Tell us about your innovative project, or find other collaborators at:
 
-https://demo.rocket.chat/channel/raspberrypi
+https://open.rocket.chat/channel/raspberrypi
 
 ### Support this project
 

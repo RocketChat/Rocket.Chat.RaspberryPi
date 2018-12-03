@@ -45,33 +45,27 @@ Learn about [Rocket.Chat](https://rocket.chat/).
 * Decent power supply
 * Internet connection
 
-### Installation 
+### Easy and Fast Installation via Raspbian Stretch 
 
-You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 2 or Pi 3 in a couple of minutes.
+You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 3B+ (Pi 3B or Pi 2 should be similar) in a few minutes.  Here's how:
 
-* Chose an operating system.
-
-<details>
- <summary>Ubuntu Core 16</summary>
-Follow these instructions to download and install the [Ubuntu Core 16 SD card image for your Raspberry Pi 2 or Pi 3](https://developer.ubuntu.com/en/snappy/start/raspberry-pi-2)
-</details>
-
-<details>
- <summary>Raspbian Stretch</summary>
 1. Prepare your SD-Card: download [_Raspbian Stretch Lite_ image](https://www.raspberrypi.org/downloads/raspbian/) or install Raspbian Stretch via [NOOBS](https://www.raspberrypi.org/downloads/noobs/). You can find help installation manuals and setup video guides on that sites as well.
 
 1. Log in to your Pi with the standard username "pi" and password "raspberry". If you want to log in remotely via SSH you have will have to [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).
 
 1. Now change the default password and set your locales, timezone and keyboard layout with `sudo raspi-config`.
 
-1. `sudo apt update && sudo apt install snapd` to install Snap.
+1. `sudo apt update && sudo apt install snapd` to install the snap daemon (snap is an amazing technology created by Canonical/Ubuntu that makes installation of complex application and/or servers really simple)
 
 1. `sudo reboot` now reboot your Pi (according to https://docs.snapcraft.io/installing-snap-on-raspbian/6754)
-</details>
 
+1.  Perform `sudo snap install rocketchat-server`.  This will take at least a couple of mintues. PLEASE BE PATIENT!  I know how difficult it may be waiting for your own private social network to be birthed.  BUT please wait a few minutes until everything has been completed.  
 
-* Perform `sudo snap install rocketchat-server`.  This will take a couple of mintues.   Wait about 2 minutes after everything has completed.  
-* Then, access `http://<server ip>:3000` to access your Rocket.Chat server!   Create the first user, which will become the server's adminsitrator.  Have fun!
+#### That's it, your private chat server should now be LIVE!
+
+Point a PC/Laptop browser on the same network as your Pi to `http://<server ip>:3000` and\ access your Rocket.Chat server!   Create the first user, which will become the server's adminsitrator.  **Have fun!**
+
+Read about the [thousands of configuration / customization options available](https://rocket.chat/docs/administrator-guides/#administrator-guides) to you.
 
 #### Put your chat server on the Internet for global access
 

@@ -32,17 +32,44 @@ Enjoy Rocket.Chat features including:
 
 ### Background
 
-This project adapts the Rocket.Chat server to run on a Raspberry Pi 3
+This project adapts the Rocket.Chat server to run on a Raspberry Pi
 
 <img src="https://raw.githubusercontent.com/Sing-Li/bbug/master/images/rockpismal.png" width="480">
 
 Learn about [Rocket.Chat](https://rocket.chat/).
 
+### Prerequisites
+
+* Raspberry Pi 2 or newer
+* SD-card (Class 10)
+* Decent power supply
+* Internet connection
+
 ### Installation 
 
-You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 2 or Pi 3 in a couple of minutes with Ubuntu Core 16!
+You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 2 or Pi 3 in a couple of minutes.
 
-* Follow these instructions to download and install the [Ubuntu Core 16 SD card image for your Raspberry Pi 2 or Pi 3](https://developer.ubuntu.com/en/snappy/start/raspberry-pi-2)
+* Chose an operating system.
+
+<details>
+ <summary>Ubuntu Core 16</summary>
+Follow these instructions to download and install the [Ubuntu Core 16 SD card image for your Raspberry Pi 2 or Pi 3](https://developer.ubuntu.com/en/snappy/start/raspberry-pi-2)
+</details>
+
+<details>
+ <summary>Raspbian Stretch</summary>
+1. Prepare your SD-Card: download [_Raspbian Stretch Lite_ image](https://www.raspberrypi.org/downloads/raspbian/) or install Raspbian Stretch via [NOOBS](https://www.raspberrypi.org/downloads/noobs/). You can find help installation manuals and setup video guides on that sites as well.
+
+1. Log in to your Pi with the standard username "pi" and password "raspberry". If you want to log in remotely via SSH you have will have to [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).
+
+1. Now change the default password and set your locales, timezone and keyboard layout with `sudo raspi-config`.
+
+1. `sudo apt update && sudo apt install snapd` to install Snap.
+
+1. `sudo reboot` now reboot your Pi (according to https://docs.snapcraft.io/installing-snap-on-raspbian/6754)
+</details>
+
+
 * Perform `sudo snap install rocketchat-server`.  This will take a couple of mintues.   Wait about 2 minutes after everything has completed.  
 * Then, access `http://<server ip>:3000` to access your Rocket.Chat server!   Create the first user, which will become the server's adminsitrator.  Have fun!
 
@@ -62,9 +89,16 @@ They can access your server via the ngrok link.
 
 #### Enable https://  support for your domain name
 
-If you have a registered domain name and a static IP address for your Pi, you can expose your server on the Internet with automatic SSL support.   See this for instructions on caddy (reverse proxy that is included in the installation snap)  configuration:  https://rocket.chat/docs/installation/manual-installation/ubuntu/snaps/autossl
+If you have a registered domain name and a static IP address and want to easily put your Pi on a domain, you can use either:
 
-HINT: if you want to use the voice and video chat features, make sure you give them the link starting with https://
+1.  use the built-in caddy server -- see all the related instructions on our [snap auto SSL with Lets Encrypt and Caddy documentation](https://rocket.chat/docs/installation/manual-installation/ubuntu/snaps/autossl/#enabling-caddy) 
+1.  install Nginx [NGINX reverse proxy for Rocket.Chat]()
+
+HINTS: 
+* Don't forget to configure your router to forward ports 80 and 443 to the pi
+* If you want to use the voice and video chat features, make sure you give them the link starting with https://
+
+#### Addendum
 
 Make sure you are using a **Pi 3 (or Pi 2)** with these instructions.   
 
@@ -76,8 +110,8 @@ And YES, Rocket.Chat even runs on the $5 Pi Zero!  Making it _the first-ever $5 
 
 ![A $5 private social network that EVERYONE can afford ](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/pizero.png)
 
-
-#### Old way of manual installation:  On Raspbian only
+<details>
+  <summary>Old way of manual installation:  On Raspbian only</summary>
 
 Make sure you start with a CLEAN INSTALL of **Raspbian JESSIE  -- NOT Wheezy**
 
@@ -135,12 +169,7 @@ Alternatively, you can find the latest release [here](https://github.com/RocketC
 Current available mongodb versions on Raspbian are too old for Rocket.Chat. Hopefully the
 situation will change shortly.
 
-Meanwhile, you can use a MongoDB service provider on the Internet.  MongoLab offers 
-free sandbox databases that can be used with Rocket.Chat.  Create a free account and
-database here:
-
-https://mongolab.com/
-
+Meanwhile, you can use a MongoDB service provider on the Internet.
 Create a user and give it write access to the database.  Note the Mongo URL, you will
 need it next.
 
@@ -195,6 +224,7 @@ HINT:  if you want to use the voice and video chat features, make sure you give 
 Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or the Apple Appstore for their phone and tablets! 
 
 Add your server's ngrok link to the app, and start mobile messaging one another!
+</details>
 
 ### Large capacity server
 

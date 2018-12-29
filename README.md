@@ -73,10 +73,13 @@ With your Rocket.Chat server up and running, start another shell - typically (Ct
 
 Login, download and start ngrok (see ngrok.com if you need more information):
 
-curl  https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip -o ngrok.zip
-unzip ngrok.zip
-cd ngrok
-./ngrok http 3000
+```shell
+$ curl  https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip -o ngrok.zip
+$ unzip ngrok.zip
+$ cd ngrok
+$ ./ngrok http 3000
+```
+
 Now follow the instruction and give the ngrok link to your friends and family anywhere in the world.
 
 They can access your server via the ngrok link.

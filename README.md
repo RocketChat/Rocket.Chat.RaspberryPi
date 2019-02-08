@@ -74,7 +74,7 @@ With your Rocket.Chat server up and running, start another shell - typically (Ct
 Login, download and start ngrok (see ngrok.com if you need more information):
 
 ```shell
-$ curl  https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip -o ngrok.zip
+$ curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip -o ngrok.zip
 $ unzip ngrok.zip
 $ cd ngrok
 $ ./ngrok http 3000

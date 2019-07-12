@@ -1,7 +1,7 @@
 [![Rocket.Chat on Pi Logo](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/raspberry-logo.png)](https://www.raspberrypi.org/)
 
-* Raspberry Pi is the tiny $30 quad-core computer that revolutionalized affordable servers
-* Rocket.Chat is the popular high performance, large capacity, open source web chat platform that rocked the server world 
+* Raspberry Pi is the tiny $35 quad-core computer that revolutionalized affordable servers
+* Rocket.Chat is the popular high performance, large capacity, open source team communications platform that rocked the server world 
 
 You can now run a private chat server on your Pi for:
 * family
@@ -32,7 +32,7 @@ Enjoy Rocket.Chat features including:
 
 ### Background
 
-This project adapts the Rocket.Chat server to run on a Raspberry Pi
+This project adapts the Rocket.Chat server to run on a Raspberry Pi 4
 
 <img src="https://raw.githubusercontent.com/Sing-Li/bbug/master/images/rockpismal.png" width="480">
 
@@ -40,16 +40,16 @@ Learn about [Rocket.Chat](https://rocket.chat/).
 
 ### Prerequisites
 
-* Raspberry Pi 2 or newer
-* SD-card (Class 10)
-* Decent power supply
+* Raspberry Pi 4 or newer (2 GB or 4 GB version recommended)
+* the fastest and largest capacity microSD you can get, we recommend 128GB Class 10 or higher
+* Proper stable power supply for USB-C (5V 3A or more)
 * Internet connection
 
-### Easy and Fast Installation via Raspbian Stretch 
+### Up and running your own private Rocket.Chat server in minutes
 
-You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 3B+ (Pi 3B or Pi 2 should be similar) in a few minutes.  Here's how:
+You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 4 Model B (either 2GB or 4GB) in a few minutes.     Here's how:
 
-1. Prepare your SD-Card: download [_Raspbian Stretch Lite_ image](https://www.raspberrypi.org/downloads/raspbian/) or install Raspbian Stretch via [NOOBS](https://www.raspberrypi.org/downloads/noobs/). You can find help installation manuals and setup video guides on that sites as well.
+1. Prepare your SD-Card: download [_Raspbian Buster Lite_ image](https://www.raspberrypi.org/downloads/raspbian/) dated July 2019 or later. You can find help installation manuals and setup video guides on that sites as well.
 
 1. Log in to your Pi with the standard username "pi" and password "raspberry". If you want to log in remotely via SSH you have will have to [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).
 
@@ -95,18 +95,6 @@ HINTS:
 * Don't forget to configure your router to forward ports 80 and 443 to the pi
 * If you want to use the voice and video chat features, make sure you give them the link starting with https://
 
-#### Addendum
-
-Make sure you are using a **Pi 3 (or Pi 2)** with these instructions.   
-
-Pi Zero,  Pi Model B, Pi Model B+,  or even Pi Model A can all run Rocket.Chat;  but have  different CPU, memory configurations and instruction sets  that may  require some additional work - see [FAQ](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) to work with these Pi s.
-
-Our community members are running Rocket.Chat on EVERY MODEL of Pi ever manufactured - so come over to our [friendly community hangout](https://open.rocket.chat/channel/raspberrypi) if you get stuck.
-
-And YES, Rocket.Chat even runs on the $5 Pi Zero!  Making it _the first-ever $5 private social network that EVERYONE can afford_ !
-
-![A $5 private social network that EVERYONE can afford ](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/pizero.png)
-
 ##### Mobile messaging on phones and tablets
 
 Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or the Apple Appstore for their phone and tablets! 
@@ -114,9 +102,11 @@ Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or 
 Add your server's ngrok link to the app, and start mobile messaging one another!
 </details>
 
-### Large capacity server
+### Invite tons of users
 
-Do you need to serve hundreds or even thousands of registered users?   If so, see how you can setup an inexpensive [high capacity Rocket.Chat server on Odroid XU4](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/README.md). 
+On your Raspberry Pi 4 Model B with 2GB of RAM, you should comfortably host 50 users with moderate file share activity.  If you are deploying a 4GB model, you can easily extend that to 100s of users  (recommend  addition of a USB3 based 1TB SSD for object storage when used for file sharing communities). 
+
+There are many other pocket-sized ARM servers that Rocket.Chat can run on.  See for example, on how to run [high capacity Rocket.Chat server on Odroid XU4](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/README.md). 
 
 ### More fun with community contributions
 
@@ -172,15 +162,11 @@ Tweet about us, or show off Pi with Rocket.Chat on Facebook!
 Order a Rocket.Chat sticker for your [Mac](https://www.stickermule.com/marketplace/10009-rocket-dot-chat-logo), [tablet](https://www.stickermule.com/marketplace/9987-rocket-dot-chat), or [Pi case](https://www.stickermule.com/marketplace/9989-rocket-dot-chat)!
 
 ### Where to get the Raspberry Pi server
-* [Off the shelf at any Microsoft store](http://www.microsoftstore.com/store/msusa/en_US/pdp/Raspberry-Pi-2-Model-B-%2B-8GB-microSD-Bundle/productID.328659700)
-* [Microcenter](http://www.microcenter.com/product/460968/Raspberry_Pi_3_Model_B)
-* [Frys](http://frys.com/product/8402328?site=sr:SEARCH:MAIN_RSLT_PG)
-* [Adafruit](https://www.adafruit.com/product/2358)
-* [Sparkfun](https://www.sparkfun.com/products/13297)
-* [Amazon](http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I)
-* [Element 14](http://www.element14.com/community/community/raspberry-pi/raspberrypi2)
-* [Mercado Livre Brazil](http://lista.mercadolivre.com.br/raspberry-pi-2-1gb#D)
-* [RS Japan](http://jp.rs-online.com/web/p/processor-microcontroller-development-kits/832-6274/)
+* [Raspberry Pi 4 Model B with 2GB RAM at MicroCenter](https://www.microcenter.com/product/608186/4-model-b---2gb-ddr4)
+* [Raspberry Pi 4 Model B with 4GB RAM at MicroCenter](https://www.microcenter.com/product/608187/4-model-b---4gb-ddr4)
+* [Raspberry Pi 4 Model B with 2GB RAM at Newark](https://canada.newark.com/raspberry-pi/rpi4-modbp-2gb/raspberry-pi-4-model-b-2gb/dp/02AH3162)
+* [Raspberry Pi 4 Model B with 4GB RAM at Newark](https://canada.newark.com/raspberry-pi/rpi4-modbp-4gb/raspberry-pi-4-model-b-4gb/dp/02AH3164)
+
 
 ### Where to get Rocket.Chat
 

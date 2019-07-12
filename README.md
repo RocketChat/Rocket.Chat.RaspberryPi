@@ -34,7 +34,7 @@ Enjoy Rocket.Chat features including:
 
 This project adapts the Rocket.Chat server to run on a Raspberry Pi 4
 
-<img src="https://raw.githubusercontent.com/Sing-Li/bbug/master/images/rockpismal.png" width="480">
+<img src="https://raw.githubusercontent.com/Sing-Li/bbug/master/images/rockpismal.jpg" width="480">
 
 Learn about [Rocket.Chat](https://rocket.chat/).
 

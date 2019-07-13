@@ -100,8 +100,11 @@ HINTS:
 
 Ask your friends to download the Rocket.Chat mobile app on Android PlayStore or the Apple Appstore for their phone and tablets! 
 
+[![Google Play](https://rocket.chat/images/install/google-play.svg)](https://play.google.com/store/apps/details?id=chat.rocket.reactnative&hl=en_US)
+
+[![iOS App Store](https://rocket.chat//images/install/itunes-store.svg)](https://apps.apple.com/us/app/rocket-chat-experimental/id1272915472)
+
 Add your server's ngrok link to the app, and start mobile messaging one another!
-</details>
 
 ### Invite tons of friends
 

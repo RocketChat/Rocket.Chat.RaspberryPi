@@ -113,9 +113,15 @@ The power of the Pi4 as a social network server is amazing, estimated capacity:
 Models | Users | Notes
 --- | --- | ---
 Raspberry Pi 4 Model B with 2GB of RAM | 50 | you should comfortably host 50 users with moderate file share activity. Use a 128GB SD card and clean uploads once a month or so.
-Raspberry Pi 4 Model B with 4GB of RAM | 100s (we hope to bring this up to 1000 users by end of 2019, wish us luck)| Recommend addition of a USB3 based 1TB SSD for object storage when used for file sharing communities.
+Raspberry Pi 4 Model B with 4GB of RAM | 100s (we hope to bring this up to 1000 users by end of 2020, wish us luck)| Recommend addition of a USB3 based 1TB SSD for object storage when used for file sharing communities.
 
 There are many other pocket-sized ARM servers that Rocket.Chat can run on.  See for example, on how to run [high capacity Rocket.Chat server on Odroid XU4](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/README.md). 
+
+### Ubuntu 18.04 lts and 64bit Arm support
+
+If you have a Pi 4 with 2GB or 4GB RAM and wants a more robust and common server setup.  Download the 64bit Arm version of the operating system from [this page](https://ubuntu.com/download/raspberry-pi).
+
+Then you can install the 64bit server using snap, or docker.  Explore [this repository](https://github.com/RocketChat/Rocket.Chat.Embedded.arm64) for docker deployment information on arm64.
 
 ### More fun with community contributions
 

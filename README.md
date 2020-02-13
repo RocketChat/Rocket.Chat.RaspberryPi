@@ -119,9 +119,9 @@ There are many other pocket-sized ARM servers that Rocket.Chat can run on.  See 
 
 ### Ubuntu 18.04 lts and 64bit Arm support
 
-If you have a Pi 4 with 2GB or 4GB RAM and wants a more robust and common server setup.  Download the 64bit Arm version of the operating system from [this page](https://ubuntu.com/download/raspberry-pi).
+If you have a Pi 4 with 2GB or 4GB RAM and want a more robust and common server setup.  Download the 64bit Arm version of the operating system from [this page](https://ubuntu.com/download/raspberry-pi).
 
-Then you can install the 64bit server using snap, or docker.  Explore [this repository](https://github.com/RocketChat/Rocket.Chat.Embedded.arm64) for docker deployment information on arm64.
+Then you can install the 64bit server using `snap`, or `docker`.  Explore [this repository](https://github.com/RocketChat/Rocket.Chat.Embedded.arm64) for docker deployment information on arm64.
 
 ### More fun with community contributions
 

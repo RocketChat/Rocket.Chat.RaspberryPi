@@ -123,6 +123,14 @@ If you have a Pi 4 with 2GB or 4GB RAM and want a more robust and common server 
 
 Then you can install the 64bit server using `snap`, or `docker`.  Explore [this repository](https://github.com/RocketChat/Rocket.Chat.Embedded.arm64) for docker deployment information on arm64.
 
+
+
+### Successful Installation on Rpi 3B+
+(May work on RPi 2 as well : test needed)
+Running snap or manual install of Rocket.Chat under a Raspian ArmH or Ubuntu server 18.04 AmrH cause dependencies issues and does not succeed (2020 April,1st).
+Snap installation do work under Ubuntu server 18.04 64ARM (without the "H").
+You can have access to the port 3000  once it is open in your firewall `sudo ufw allow 3000`
+
 ### More fun with community contributions
 
 RockOnPi community member @rdagger has contributed this excellent YouTube video on manual installation - just click on picture to watch:

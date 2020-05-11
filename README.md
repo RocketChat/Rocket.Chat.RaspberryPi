@@ -81,6 +81,9 @@ Now follow the instruction and give the ngrok link to your friends and family an
 
 They can access your server via the ngrok link.
 
+If you connect and disconnect your Pi server from the Internet all the time (that's usually not a good idea if you are serious about operating a server), you will discover that the ngrok link changes every time you restart.   A possible solution is using one of the [Dynamic DNS services](https://account.dyn.com/).  
+
+
 #### Enable https://  support for your domain name
 
 If you have a registered domain name and a static IP address and want to easily put your Pi on a domain, you can use either:

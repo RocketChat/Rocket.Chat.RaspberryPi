@@ -181,10 +181,10 @@ Tweet about us, or show off Pi with Rocket.Chat on Facebook!
 Order a Rocket.Chat sticker for your [Mac](https://www.stickermule.com/marketplace/10009-rocket-dot-chat-logo), [tablet](https://www.stickermule.com/marketplace/9987-rocket-dot-chat), or [Pi case](https://www.stickermule.com/marketplace/9989-rocket-dot-chat)!
 
 ### Where to get the Raspberry Pi server
-* [Raspberry Pi 4 Model B with 2GB RAM at MicroCenter](https://www.microcenter.com/product/608186/4-model-b---2gb-ddr4)
-* [Raspberry Pi 4 Model B with 4GB RAM at MicroCenter](https://www.microcenter.com/product/608187/4-model-b---4gb-ddr4)
-* [Raspberry Pi 4 Model B with 2GB RAM at Newark](https://canada.newark.com/raspberry-pi/rpi4-modbp-2gb/raspberry-pi-4-model-b-2gb/dp/02AH3162)
-* [Raspberry Pi 4 Model B with 4GB RAM at Newark](https://canada.newark.com/raspberry-pi/rpi4-modbp-4gb/raspberry-pi-4-model-b-4gb/dp/02AH3164)
+* [Raspberry Pi 4 Model B with 2GB RAM at MicroCenter](https://www.microcenter.com/product/608436/raspberry-pi-4-model-b---2gb-ddr4)
+* [Raspberry Pi 4 Model B with 4GB RAM at MicroCenter](https://www.microcenter.com/product/609038/raspberry-pi-4-model-b---4gb-ddr4)
+* [Raspberry Pi 4 Model B with 2GB RAM at Newark](https://www.newark.com/raspberry-pi/rpi4-modbp-2gb/raspberry-pi-4-model-b-2gb-rohs/dp/02AH3162)
+* [Raspberry Pi 4 Model B with 4GB RAM at Newark](https://www.newark.com/raspberry-pi/rpi4-modbp-4gb/raspberry-pi-4-model-b-4gb-rohs/dp/02AH3164)
 
 
 ### Where to get Rocket.Chat

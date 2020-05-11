@@ -50,15 +50,11 @@ Learn about [Rocket.Chat](https://rocket.chat/).
 
 You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 4 Model B (either 2GB or 4GB) in a few minutes.     Here's how:
 
-1. Prepare your SD-Card: download [_Raspbian Buster Lite_ image](https://www.raspberrypi.org/downloads/raspbian/) dated July 2019 or later. You can find help installation manuals and setup video guides on that sites as well.
+1. Prepare your SD-Card: download [_Ubuntu 18.04 LTS image_](http://cdimage.ubuntu.com/ubuntu/releases/18.04.4/release/ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz).  Make sure you use **18.04LTS** and NOT 20.04LTS as 20.04LTS currently has problem with Arm64 version of mongoDB.   Raspbian is no longer recommended since it is still 32bit at the moment.
 
-1. Log in to your Pi with the standard username "pi" and password "raspberry". If you want to log in remotely via SSH you have will have to [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).
+1. Log in to your Pi with the standard username "ubuntu" and password "ubuntu". If you want to log in remotely via SSH you have will have to [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).
 
-1. Now change the default password and set your locales, timezone and keyboard layout with `sudo raspi-config`.
-
-1. `sudo apt update && sudo apt install snapd` to install the snap daemon (snap is an amazing technology created by Canonical/Ubuntu that makes installation of complex application and/or servers really simple)
-
-1. `sudo reboot` now reboot your Pi (according to https://docs.snapcraft.io/installing-snap-on-raspbian/6754)
+1. It is a good idea to bring the system up to date after installation.   You can issue the commands `apt-get update` followed by `apt-get dist-upgrade` to make sure the system is caught up with all the fixes and sub-releases.
 
 1.  Perform `sudo snap install rocketchat-server`.  This will take at least a couple of mintues. PLEASE BE PATIENT!  I know how difficult it may be waiting for your own private social network to be birthed.  BUT please wait a few minutes until everything has been completed.  
 

@@ -10,13 +10,14 @@ Project Requirements:
  - Heat dissipation without added weight
  - Custom mini-cab
  
-Since my COVID-19 hobby became 3D printing...I decided to go a little ape and print everything to my own design so it is all self contained. All items were printed using the following:
+Since my COVID-19 hobby became 3D printing...I decided to go a little ape and print everything to my own design so it 
+is all self contained. All items were printed using the following:
 
-QIDI X-PLUS (with turbo-blower mod)
-MICRO-SWISS MK10 Plated Wear Resistant Nozzle for PTFE lined hotend M7 Threads
-Hatchbox Gold ABS 1.75mm filament
-Extruder temp: 220°C for all layers
-Bed temp: 110°C for first 7 layers; 100°C for remaining layers
+ - QIDI X-PLUS (with turbo-blower mod)
+ - MICRO-SWISS MK10 Plated Wear Resistant Nozzle for PTFE lined hotend M7 Threads
+ - Hatchbox Gold ABS 1.75mm filament
+ - Extruder temp: 220°C for all layers
+ - Bed temp: 110°C for first 7 layers; 100°C for remaining layers
 
 Part list:
 1x NUC5i7RYH (disassembled down to motherboard)

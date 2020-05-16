@@ -1,0 +1,42 @@
+This was designed to stick a NUC and a Raspberry Pi in the same chassis with hardware monitoring and RocketChat
+
+Project Requirements:
+ - Windows 10 machine to run NVR software
+ - Webhosting
+ - Lightweight small DB
+ - Headless
+ - Visible hardware monitoring
+ - Single power supply
+ - Heat dissipation without added weight
+ - Custom mini-cab
+ 
+Since my COVID-19 hobby became 3D printing...I decided to go a little ape and print everything to my own design so it is all self contained. All items were printed using the following:
+
+QIDI X-PLUS (with turbo-blower mod)
+MICRO-SWISS MK10 Plated Wear Resistant Nozzle for PTFE lined hotend M7 Threads
+Hatchbox Gold ABS 1.75mm filament
+Extruder temp: 220°C for all layers
+Bed temp: 110°C for first 7 layers; 100°C for remaining layers
+
+Part list:
+1x NUC5i7RYH (disassembled down to motherboard)
+1x 8GB DDR3-12800 SO-DIMM
+1x M.2 2280 PCIe 1TB NVMe SSD
+1x NUC5i7RYH power brick (19vDC@3.42A)
+1x Raspberry Pi 3B+ (overclocked)
+1x WaveShare 5" HDMI LCD
+1x Noctua NF-A12x15 FLX 120mm fan
+1x KeyStone CAT6 RJ45 coupler
+1x 9-36vDC to 5vDC@5A step down transformer ("Buck Converter")
+1x 6" IDE 40-Pin Male to Female Extension Cable
+1x 5.5x2.1mm 'Y' splitter - Female input; male outputs
+1x 5.5x2.1mm Female Jack to 5.5x2.5mm Male Plug
+1x 12-24vDC 16mm Pushbutton Switch
+1x 6" HDMI cable
+1x 6" CAT6 cable
+1x Female 5.5x2.1mm DC Power Jack (threaded)
+16x 10-32x1/2" hex head rack bolts (side plates)
+8x 12-24x1/2" hex head rack bolts (top and bottom plates)
+
+Diagram: https://drive.google.com/file/d/1zeugATu0nqTPe9E4u96ViZZHQ2xTKgQI/view?usp=sharing
+Print files and pictures: https://www.thingiverse.com/thing:4367016

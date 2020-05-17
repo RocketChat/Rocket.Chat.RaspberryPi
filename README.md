@@ -50,7 +50,7 @@ Learn about [Rocket.Chat](https://rocket.chat/).
 
 You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 4 Model B (either 2GB or 4GB) in a few minutes.     Here's how:
 
-1. Prepare your SD-Card: download [_Ubuntu 18.04 LTS image_](http://cdimage.ubuntu.com/ubuntu/releases/18.04.4/release/ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz).  Make sure you use **18.04LTS** and NOT 20.04LTS as 20.04LTS currently has problem with Arm64 version of mongoDB.   Raspbian is no longer recommended since it is still 32bit at the moment.  If you really want to use 20.04lts and are already familiar with docker technology, then follow these instructuions to install the [latest Rocket.Chat on the latest ubuntu distribution](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/dockerarm64).
+1. Prepare your SD-Card: download [_Ubuntu 18.04 LTS image_](http://cdimage.ubuntu.com/ubuntu/releases/18.04.4/release/ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz).  Make sure you use **18.04LTS** and NOT 20.04LTS as `snap` on 20.04LTS currently has problem with Arm64 version of mongoDB.   Raspbian is no longer recommended since it is still 32bit at the moment.  If you really want to use 20.04lts and are already familiar with docker technology, then follow these instructuions to install the [latest Rocket.Chat on the latest ubuntu distribution](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/dockerarm64).
 
 1. Log in to your Pi with the standard username "ubuntu" and password "ubuntu". If you want to log in remotely via SSH you have will have to [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).
 

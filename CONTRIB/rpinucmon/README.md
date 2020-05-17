@@ -15,14 +15,13 @@
 <br/>Since my COVID-19 hobby became 3D printing...I decided to go a little ape and print everything to my own design so it is all self contained.
 
 <br/><b>All items were printed using the following:</b>
-
 <br/>- QIDI X-PLUS (with turbo-blower mod)
 <br/>- MICRO-SWISS MK10 Plated Wear Resistant Nozzle
 <br/>- Hatchbox Gold ABS 1.75mm filament
 <br/>- Extruder temp: 220℃ for all layers
 <br/>- Bed temp: 110℃ for the first 7 layers; 100℃ for all remaining layers
 
-<br/>The parts used are as follows:
+<br/><b>The parts used are as follows:</b>
 <br/>1x NUC5i7RYH (disassembled down to motherboard)
 <br/>1x 8GB DDR3-12800 SO-DIMM
 <br/>1x M.2 2280 PCIe 1TB NVMe SSD

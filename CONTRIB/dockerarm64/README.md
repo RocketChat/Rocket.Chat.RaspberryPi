@@ -6,7 +6,7 @@ And ubuntu has [made it straigthforward to download image and install the operat
 
 Unfortunately, there is [a bug with existing arm64 snap](https://github.com/RocketChat/Rocket.Chat.Embedded.arm64/issues/1) that affects mongodb, and snaps cannot be used to install Rocket.Chat on 20.04lts at the moment.
 
-Instead, you an readily use docker to install your server on 20.04lts arm64.  Following is the instructions.
+Instead, you an readily use docker to install your server on 20.04lts arm64.  
 
 First, you should familiarize yourself with docker if you don't know what it is.  Some [learning resources](https://docs.docker.com/get-started/) from docker. 
 

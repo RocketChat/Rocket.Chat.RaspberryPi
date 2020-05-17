@@ -9,3 +9,4 @@
 * [Build a pixbot that posts pictures taken with the RaspberryPi camera](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/pixbot_takes_picture_with_raspberry_pi_camera/pixbot)  by @sing-li
 * [Working kernel 4.2 configuration for ODROID-XU4 (Required for Snap support)](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/rocket_chat_on_odroid_xu4/odroidxu4-kernel4.2-config)  by @Avnerus
 * [RocketPi + I7NUC WITH OPEN-SOURCE MONITORING](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/rpinucmon)  by @bchase-woot
+* [Running Rocket.Chat 3.2.2 and later on Ubuntu 20.04lts with docker](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/dockerarm64)  by @sing-li

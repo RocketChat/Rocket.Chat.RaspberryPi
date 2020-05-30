@@ -41,16 +41,16 @@ Learn about [Rocket.Chat](https://rocket.chat/).
 
 ### Prerequisites
 
-* Raspberry Pi 4 or newer (2 GB or 4 GB version recommended)
+* Raspberry Pi 4 or newer (4 GB or 8 GB version recommended)
 * the fastest and largest capacity microSD you can get, we recommend 128GB Class 10 or higher
 * Proper stable power supply for USB-C (5V 3A or more)
 * Internet connection
 
 ### Up and running in minutes
 
-You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 4 Model B (either 2GB or 4GB) in a few minutes.     Here's how:
+You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 4 Model B (either 2GB, 4GB, and 8GB) in a few minutes.     Here's how:
 
-1. Prepare your SD-Card: download [_Ubuntu 18.04 LTS image_](http://cdimage.ubuntu.com/ubuntu/releases/18.04.4/release/ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz).  Make sure you use **18.04LTS** and NOT 20.04LTS as `snap` on 20.04LTS currently has problem with Arm64 version of mongoDB.   Raspbian is no longer recommended since it is still 32bit at the moment.  
+1. Prepare your SD-Card: download [_Ubuntu 18.04 LTS image_](http://cdimage.ubuntu.com/ubuntu/releases/18.04.4/release/ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz).  Make sure you use **18.04LTS** and NOT 20.04LTS as `snap` on 20.04LTS currently has problem with Arm64 version of mongoDB.   If you want to use Raspbian, make sure you use the [64bit image](https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2020-05-28/2020-05-27-raspios-buster-arm64.zip) and perform `apt-get install snapd` to install the snap daemon before proceeding to step 2.
 > If you really want to use 20.04lts and are already familiar with docker technology, then follow these instructuions to install the [latest Rocket.Chat on the latest ubuntu distribution](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/dockerarm64). The rest of this section assumes you are using 18.04lts.
 
 2. Log in to your Pi with the standard username "ubuntu" and password "ubuntu". If you want to log in remotely via SSH you have will have to [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).

@@ -113,13 +113,14 @@ The power of the Pi4 as a social network server is amazing, estimated capacity:
 Models | Users | Notes
 --- | --- | ---
 Raspberry Pi 4 Model B with 2GB of RAM | 50 | you should comfortably host 50 users with moderate file share activity. Use a 128GB SD card and clean uploads once a month or so.
-Raspberry Pi 4 Model B with 4GB of RAM | 100s (we hope to bring this up to 1000 users by end of 2020, wish us luck)| Recommend addition of a USB3 based 1TB SSD for object storage when used for file sharing communities.
+Raspberry Pi 4 Model B with 4GB of RAM | 100s (~we hope to bring this up to 1000 users by end of 2020, wish us luck~)  as of  June 2020, on release 3.3.3+ 1000 registered users should be possible| Recommend addition of a USB3 based 1TB SSD for object storage when used for file sharing communities (ideally object storage handled off the Pi via S3 interface).
+Raspberry Pi 4 Model B with 8GB of RAM | as of June 2020, on release 3.3.3+ 2000 registered users should be possible| Recommend addition of a USB3 based 4TB SSD for object storage when used for file sharing communities (ideally object storage handled off the Pi via S3 interface).
 
 There are many other pocket-sized ARM servers that Rocket.Chat can run on.  See for example, on how to run [high capacity Rocket.Chat server on Odroid XU4](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/README.md). 
 
 ### Ubuntu 18.04 lts and 64bit Arm support
 
-If you have a Pi 4 with 2GB or 4GB RAM and want a more robust and common server setup.  Download the 64bit Arm version of the operating system from [this page](https://ubuntu.com/download/raspberry-pi).
+If you have a Pi 4 with 2GB, 4GB, or 8GB RAM and want a more robust and common server setup.  Download the 64bit Arm version of the operating system from [this page](https://ubuntu.com/download/raspberry-pi).
 
 Then you can install the 64bit server using `snap`, or `docker`.  Explore [this repository](https://github.com/RocketChat/Rocket.Chat.Embedded.arm64) for docker deployment information on arm64.
 

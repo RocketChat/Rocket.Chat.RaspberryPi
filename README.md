@@ -48,20 +48,23 @@ Learn about [Rocket.Chat](https://rocket.chat/).
 
 ### Up and running in minutes
 
-You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 4 Model B (either 2GB, 4GB, and 8GB) in a few minutes.     Here's how:
+You can get a Rocket.Chat server and a mongoDB instance working on your Raspiberry Pi 4 Model B (either 2GB, 4GB, and 8GB) in a few minutes.
+Here's how:
 
-1. Prepare your SD-Card: download [_Ubuntu 18.04 LTS image_](http://cdimage.ubuntu.com/ubuntu/releases/18.04.4/release/ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz).  Make sure you use **18.04LTS** and NOT 20.04LTS as `snap` on 20.04LTS currently has problem with Arm64 version of mongoDB.   If you want to use Raspbian, make sure you use the [64bit image](https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2020-05-28/2020-05-27-raspios-buster-arm64.zip) and perform `apt-get install snapd` to install the snap daemon before proceeding to step 2.
+1. Prepare your SD-Card: download [_Ubuntu 18.04 LTS image_](http://cdimage.ubuntu.com/ubuntu/releases/18.04.4/release/ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz). Make sure you use **18.04LTS** and NOT 20.04LTS as `snap` on 20.04LTS currently has problem with Arm64 version of mongoDB. If you want to use Raspbian, make sure you use the [64bit image](https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2020-05-28/2020-05-27-raspios-buster-arm64.zip) and perform `apt-get install snapd` to install the snap daemon before proceeding to step 2.
 > If you really want to use 20.04lts and are already familiar with docker technology, then follow these instructuions to install the [latest Rocket.Chat on the latest ubuntu distribution](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/dockerarm64). The rest of this section assumes you are using 18.04lts.
 
 2. Log in to your Pi with the standard username "ubuntu" and password "ubuntu". If you want to log in remotely via SSH you have will have to [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).
 
-1. It is a good idea to bring the system up to date after installation.   You can issue the commands `apt-get update` followed by `apt-get dist-upgrade` to make sure the system is caught up with all the fixes and sub-releases.
+1. It is a good idea to bring the system up to date after installation. You can issue the commands `apt-get update` followed by `apt-get dist-upgrade` to make sure the system is caught up with all the fixes and sub-releases.
 
-1.  Perform `sudo snap install rocketchat-server`.  This will take at least a couple of mintues. PLEASE BE PATIENT!  I know how difficult it may be waiting for your own private social network to be birthed.  BUT please wait a few minutes until everything has been completed.  
+1. Perform `sudo snap install rocketchat-server`. This will take at least a couple of mintues. PLEASE BE PATIENT! I know how difficult it may be waiting for your own private social network to be birthed. BUT please wait a few minutes until everything has been completed.
 
 #### That's it, your private chat server should now be LIVE!
 
-Point a PC/Laptop browser on the same network as your Pi to `http://<server ip>:3000` and\ access your Rocket.Chat server!   Create the first user, which will become the server's adminsitrator.  **Have fun!**
+Point a PC/Laptop browser on the same network as your Pi to `http://<server ip>:3000` and access your Rocket.Chat server!  
+Create the first user, which will become the server's adminsitrator.  
+**Have fun!**
 
 Read about the [thousands of configuration / customization options available](https://rocket.chat/docs/administrator-guides/#administrator-guides) to you.
 
@@ -82,7 +85,7 @@ Now follow the instruction and give the ngrok link to your friends and family an
 
 They can access your server via the ngrok link.
 
-If you connect and disconnect your Pi server from the Internet all the time (that's usually not a good idea if you are serious about operating a server), you will discover that the ngrok link changes every time you restart.   A possible solution is to use one of the [Dynamic DNS services](https://account.dyn.com/).  
+If you connect and disconnect your Pi server from the Internet all the time (that's usually not a good idea if you are serious about operating a server), you will discover that the ngrok link changes every time you restart. A possible solution is to use one of the [Dynamic DNS services](https://account.dyn.com/).
 
 
 #### Enable https://  support for your domain name
@@ -113,16 +116,16 @@ The power of the Pi4 as a social network server is amazing, estimated capacity:
 Models | Users | Notes
 --- | --- | ---
 Raspberry Pi 4 Model B with 2GB of RAM | 50 | you should comfortably host 50 users with moderate file share activity. Use a 128GB SD card and clean uploads once a month or so.
-Raspberry Pi 4 Model B with 4GB of RAM | 100s (~we hope to bring this up to 1000 users by end of 2020, wish us luck~)  as of  June 2020, on release 3.3.3+ 1000 registered users should be possible| Recommend addition of a USB3 based 1TB SSD for object storage when used for file sharing communities (ideally object storage handled off the Pi via S3 interface).
+Raspberry Pi 4 Model B with 4GB of RAM | 100s (~we hope to bring this up to 1000 users by end of 2020, wish us luck~) as of June 2020, on release 3.3.3+ 1000 registered users should be possible| Recommend addition of a USB3 based 1TB SSD for object storage when used for file sharing communities (ideally object storage handled off the Pi via S3 interface).
 Raspberry Pi 4 Model B with 8GB of RAM | as of June 2020, on release 3.3.3+ 2000 registered users should be possible| Recommend addition of a USB3 based 4TB SSD for object storage when used for file sharing communities (ideally object storage handled off the Pi via S3 interface).
 
-There are many other pocket-sized ARM servers that Rocket.Chat can run on.  See for example, on how to run [high capacity Rocket.Chat server on Odroid XU4](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/README.md). 
+There are many other pocket-sized ARM servers that Rocket.Chat can run on. See for example, on how to run [high capacity Rocket.Chat server on Odroid XU4](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/blob/master/CONTRIB/rocket_chat_on_odroid_xu4/README.md). 
 
 ### Ubuntu 18.04 lts and 64bit Arm support
 
-If you have a Pi 4 with 2GB, 4GB, or 8GB RAM and want a more robust and common server setup.  Download the 64bit Arm version of the operating system from [this page](https://ubuntu.com/download/raspberry-pi).
+If you have a Pi 4 with 2GB, 4GB, or 8GB RAM and want a more robust and common server setup. Download the 64bit Arm version of the operating system from [this page](https://ubuntu.com/download/raspberry-pi).
 
-Then you can install the 64bit server using `snap`, or `docker`.  Explore [this repository](https://github.com/RocketChat/Rocket.Chat.Embedded.arm64) for docker deployment information on arm64.
+Then you can install the 64bit server using `snap`, or `docker`. Explore [this repository](https://github.com/RocketChat/Rocket.Chat.Embedded.arm64) for docker deployment information on arm64.
 
 
 
@@ -130,7 +133,7 @@ Then you can install the 64bit server using `snap`, or `docker`.  Explore [this 
 (May work on RPi 2 as well : test needed)
 Running snap or manual install of Rocket.Chat under a Raspian ArmH or Ubuntu server 18.04 AmrH cause dependencies issues and does not succeed (2020 April,1st).
 Snap installation do work under Ubuntu server 18.04 64ARM (without the "H").
-You can have access to the port 3000  once it is open in your firewall `sudo ufw allow 3000`
+You can have access to the port 3000 once it is open in your firewall `sudo ufw allow 3000`
 
 ### More fun with community contributions
 
@@ -141,25 +144,25 @@ RockOnPi community member @rdagger has contributed this excellent YouTube video 
 
 Try the following optional enchacements for your RocketOnPi, contributed by your friendly fellow community members:
 
-[Auto re-start Rocket.Chat if Pi Reboots or Crashes](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/restart_after_reboot_with_supervisor),  by @elpatron68 and @j8r
+[Auto re-start Rocket.Chat if Pi Reboots or Crashes](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/restart_after_reboot_with_supervisor), by @elpatron68 and @j8r
 
 [![Hubot](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/hubotport.png)](https://hubot.github.com/)
 
-[Monitor or control anything connected to your Pi, from anywhere - hubot style!](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/monitor_and_control_anything_anywhere_with_hubot),  by @sing-li
+[Monitor or control anything connected to your Pi, from anywhere - hubot style!](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/tree/master/CONTRIB/monitor_and_control_anything_anywhere_with_hubot), by @sing-li
 
-### Stuck?  Need help?
+### Stuck? Need help?
 
 First, check our list of [Frequently Asked Questions](https://github.com/RocketChat/Rocket.Chat.RaspberryPi/wiki/Frequently-Asked-Questions) to see if your question is already included.
 
-If not, create an issue here:     https://github.com/RocketChat/Rocket.Chat.RaspberryPi/issues/new
+If not, create an issue here: https://github.com/RocketChat/Rocket.Chat.RaspberryPi/issues/new
 
 OR
 
-Come join us at https://open.rocket.chat/ to get help from friendly  RockOnPi community members and Rocket.Chat dev team.
+Come join us at https://open.rocket.chat/ to get help from friendly RockOnPi community members and Rocket.Chat dev team.
 
 ### RockOnPi Community meetup 24 x 7
 
-The RockOnPi community gathers at https://open.rocket.chat/channel/raspberrypi  - and talk Pi !!
+The RockOnPi community gathers at https://open.rocket.chat/channel/raspberrypi - and talk Pi!!
 
 ### Makers Ahoy!
 
@@ -177,9 +180,9 @@ https://open.rocket.chat/channel/raspberrypi
 
 ### Support this project
 
-Help us spread the word about this project!  
+Help us spread the word about this project!
 
-Tell all your Pi and Maker friends!  Show off Rocket.Chat at your next meetup!
+Tell all your Pi and Maker friends! Show off Rocket.Chat at your next meetup!
 
 Tweet about us, or show off Pi with Rocket.Chat on Facebook!
 
